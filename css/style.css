@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    font-size: 17px;
+    font-family: Arial;
+    color: white;
+    width: 100%;
+}
