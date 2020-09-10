@@ -13,9 +13,12 @@ footer {
     color: white;
     width: 100%;
 }
-.encabezado ul {
+.encabezado ul{
     list-style: none;
-    display: flex;
-    
+   display: flex;
+}
 
+.contactanos ul{
+list-style: none;
+/* nose porque se cambia todo como si fuera la clase de footer */
 }
