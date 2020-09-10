@@ -2,23 +2,41 @@
     box-sizing: border-box;
 }
 
-.principal {
-    display: flex;
-}
-
-footer {
-    background-color: black;
-    font-size: 17px;
-    font-family: Arial;
-    color: white;
-    width: 100%;
-}
 .encabezado ul{
     list-style: none;
-   display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: inherit;
+    font-stretch: semi-expanded;
+    font-size: 20px;
+    background-color:rgb(191, 101, 243);
+    text-decoration: underline;
+}
+
+.titulos {
+    display: flex;
+    font-size: 20px;
+    font-style: inherit;
+    border: solid 3px rgb(191, 101, 243);
+    padding: 40px;
 }
 
 .contactanos ul{
 list-style: none;
-/* nose porque se cambia todo como si fuera la clase de footer */
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-style: inherit;
+font-stretch: semi-expanded;
+font-size: normal;
+background-color:rgb(191, 101, 243);
+}
+
+
+footer {
+    font-size: 15px;
+    font-family: Arial;
+    color: black;
+    width: 100%;
 }
