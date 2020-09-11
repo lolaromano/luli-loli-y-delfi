@@ -173,3 +173,18 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border: solid 3px rgb(227, 184, 255); 
 
 }
+.peliculasdeaccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+.seriesdeaccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+}
