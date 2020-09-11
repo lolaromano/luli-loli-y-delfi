@@ -107,7 +107,39 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     width: 100%;
 }
 
-/* Acá arranca el css de los distintos html */
+
+
+/* Acá empieza Generos */
+
+.GenerosAccion{
+    display: flex;
+    border: solid 3px rgb(227, 184, 255); 
+    padding: 10px;
+    align-items: center;
+    font-size: small;
+    color: rgb(78, 78, 78);
+    justify-content: flex-start;
+    width: 8%;
+}
+
+.PeliculasDeAccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+.SeriesDeAccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+
+
+
+/* Acá empieza Series y Peliculas */
 
 .PopularesEniChill {
     display: flex;
@@ -167,24 +199,4 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .FavoritosDeSiempre img {
     width: 190px;
-}
-
-.generosaccion{
-    border: solid 3px rgb(227, 184, 255); 
-
-}
-.peliculasdeaccion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 20px;
-}
-.seriesdeaccion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 20px;
-}
 }
