@@ -45,12 +45,20 @@
     padding: 20px;
 }
 
+.PeliculasMasRecientes img {
+    width: 190px;
+}
+
 .PeliculasMasVistas {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
+}
+
+.PeliculasMasVistas img {
+    width: 190px;
 }
 
 .SeriesMasRecientes {
@@ -61,6 +69,10 @@
     padding: 20px;
 }
 
+.SeriesMasRecientes img {
+    width: 190px;
+}
+
 .SeriesMasVistas {
     display: flex;
     flex-direction: row;
@@ -69,6 +81,9 @@
     padding: 20px;
 }
 
+.SeriesMasVistas img {
+    width: 190px;
+}
 
 .contactanos ul{
 list-style: none;
@@ -89,3 +104,4 @@ footer {
     color: black;
     width: 100%;
 }
+
