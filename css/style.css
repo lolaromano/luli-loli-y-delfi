@@ -129,6 +129,11 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
+
+.PeliculasDeAccion img{
+    width: 190px;
+}
+
 .SeriesDeAccion{
     display: flex;
     flex-direction: row;
@@ -137,6 +142,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     padding: 20px;
 }
 
+.SeriesDeAccion img {
+    width: 190px;
+}
 
 
 /* Acá empieza Series y Peliculas */
