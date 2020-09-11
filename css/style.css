@@ -168,3 +168,8 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .FavoritosDeSiempre img {
     width: 190px;
 }
+
+.generosaccion{
+    border: solid 3px rgb(227, 184, 255); 
+
+}
