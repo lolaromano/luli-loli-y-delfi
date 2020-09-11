@@ -11,21 +11,24 @@
     font-stretch: semi-expanded;
     font-size: 20px;
     background-color:rgb(191, 101, 243);
-    text-decoration: underline;
     font-family: Arial;
+    color: white;
+    height: 130px;
+    align-items: center;
+    padding: 0%;
 }
 
 .buscador {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: start;
-    font-size: normal;
-    padding-right: 30px;
-    padding: 10px;
+    align-items: center;
+    font-size: small;
+    color: grey;
     border: solid 3px rgb(227, 184, 255);
-    width: 160px;
-    margin-left: 1250px;
+    background-color: white;
+    height: 40px;
+    padding: 20px;
 }
 
 .titulos {
