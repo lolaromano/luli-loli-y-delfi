@@ -12,7 +12,7 @@
     font-size: 20px;
     background-color:rgb(191, 101, 243);
     text-decoration: underline;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial;
 }
 
 .buscador {
@@ -26,7 +26,6 @@
     border: solid 3px rgb(227, 184, 255);
     width: 160px;
     margin-left: 1250px;
-   
 }
 
 .titulos {
@@ -85,7 +84,7 @@
     width: 190px;
 }
 
-.contactanos ul{
+.footer ul{
 list-style: none;
 display: flex;
 flex-direction: row;
@@ -98,10 +97,59 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 
 
-footer {
+.nombres {
     font-size: 15px;
     font-family: Arial;
     color: black;
     width: 100%;
 }
 
+/* Acá arranca el css de los distintos html */
+
+.PopularesEniChill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+
+.PopularesEniChill img {
+    width: 190px;
+}
+
+.Tendencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+
+.Tendencias img {
+    width: 190px;
+}
+
+.NuevosLanzamientos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+
+.NuevosLanzamientos img {
+    width: 190px;
+}
+
+.Documentales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 20px;
+}
+
+.Documentales img {
+    width: 190px;
+}
