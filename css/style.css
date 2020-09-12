@@ -42,6 +42,28 @@
     padding: 10PX;
 }
 
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: inherit;
+    font-stretch: semi-expanded;
+    font-size: normal;
+    background-color:rgb(191, 101, 243);
+    padding: 15px;
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold';
+    }
+    
+    .nombres {
+        font-size: 13px;
+        font-family: Arial;
+        color: black;
+        width: 100%;
+    }
+
 .PeliculasMasRecientes {
     display: flex;
     flex-direction: row;
@@ -90,24 +112,7 @@
     width: 190px;
 }
 
-.footer ul{
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-font-style: inherit;
-font-stretch: semi-expanded;
-font-size: normal;
-background-color:rgb(191, 101, 243);
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-.nombres {
-    font-size: 15px;
-    font-family: Arial;
-    color: black;
-    width: 100%;
-}
 
 /* Acá empieza Generos */
 
