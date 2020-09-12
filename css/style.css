@@ -55,6 +55,7 @@
     color: rgb(70, 70, 70);
     font-weight: bolder;
     font-family: 'Arial Narrow Bold';
+    text-decoration: none;
     }
     
     .nombres {
@@ -212,3 +213,5 @@
 .FavoritosDeSiempre img {
     width: 190px;
 }
+
+/* Esto es del footer-ayuda */
