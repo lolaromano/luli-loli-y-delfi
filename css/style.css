@@ -10,8 +10,9 @@
     font-style: inherit;
     font-stretch: semi-expanded;
     font-size: 20px;
-    background-color:rgb(191, 101, 243);
-    font-family: Arial;
+    font-weight: bolder;
+    background-color: rgb(191, 101, 243);
+    font-family: 'Arial Narrow Bold';
     color: white;
     height: 130px;
     align-items: center;
@@ -34,9 +35,11 @@
 .titulos {
     display: flex;
     font-size: 20px;
-    font-style: inherit;
+    font-style: normal;
     background-color: rgb(227, 184, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: montserrat;
+    color: rgb(41, 39, 39);
+    padding: 10PX;
 }
 
 .PeliculasMasRecientes {
