@@ -99,15 +99,12 @@ background-color:rgb(191, 101, 243);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 .nombres {
     font-size: 15px;
     font-family: Arial;
     color: black;
     width: 100%;
 }
-
-
 
 /* Acá empieza Generos */
 
@@ -145,7 +142,6 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .SeriesDeAccion img {
     width: 190px;
 }
-
 
 /* Acá empieza Series y Peliculas */
 
