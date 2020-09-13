@@ -214,4 +214,46 @@
     width: 190px;
 }
 
-/* Esto es del footer-ayuda */
+
+
+/* Aca empieza Contactenos*/
+
+.contactenos {
+    background-color: rgba(19, 18, 18, 0.89);
+    color: white;
+    font-family: Arial;
+}
+
+.mensaje {
+    block-size: 200px;
+}
+
+.nombres1 {
+    color: white;
+}
+
+
+
+/* Aca empieza Terminos y condiciones */
+
+.terminos {
+    background-color: rgba(19, 18, 18, 0.89);
+    color: white;
+    font-family: Arial;
+}
+
+.terminos ol {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+
+/* Aca empieza Ayuda*/
+
+.ayuda {
+    background-color: rgba(19, 18, 18, 0.89);
+    color: white;
+    font-family: Arial;
+}
