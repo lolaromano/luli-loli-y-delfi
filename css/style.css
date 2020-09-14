@@ -10,8 +10,9 @@
     font-style: inherit;
     font-stretch: semi-expanded;
     font-size: 20px;
-    background-color:rgb(191, 101, 243);
-    font-family: Arial;
+    font-weight: bolder;
+    background-color: rgb(191, 101, 243);
+    font-family: 'Arial Narrow Bold';
     color: white;
     height: 130px;
     align-items: center;
@@ -34,10 +35,35 @@
 .titulos {
     display: flex;
     font-size: 20px;
-    font-style: inherit;
+    font-style: normal;
     background-color: rgb(227, 184, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: montserrat;
+    color: rgb(41, 39, 39);
+    padding: 10PX;
 }
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: inherit;
+    font-stretch: semi-expanded;
+    font-size: normal;
+    background-color:rgb(191, 101, 243);
+    padding: 15px;
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold';
+    text-decoration: none;
+    }
+    
+    .nombres {
+        font-size: 13px;
+        font-family: Arial;
+        color: black;
+        width: 100%;
+    }
 
 .PeliculasMasRecientes {
     display: flex;
@@ -87,24 +113,7 @@
     width: 190px;
 }
 
-.footer ul{
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-font-style: inherit;
-font-stretch: semi-expanded;
-font-size: normal;
-background-color:rgb(191, 101, 243);
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-.nombres {
-    font-size: 15px;
-    font-family: Arial;
-    color: black;
-    width: 100%;
-}
 
 /* Acá empieza Generos */
 
@@ -203,4 +212,51 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .FavoritosDeSiempre img {
     width: 190px;
+}
+
+
+
+/* Aca empieza Contactenos*/
+
+.contactenos {
+    background-color: rgba(19, 18, 18, 0.89);
+    color: white;
+    font-family: Arial;
+}
+
+.mensaje {
+    block-size: 200px;
+}
+
+.nombres1 {
+    color: white;
+}
+
+
+
+/* Aca empieza Terminos y condiciones */
+
+.terminos {
+    background-color: rgba(19, 18, 18, 0.89);
+    color: white;
+    font-family: Arial;
+}
+
+.terminos ol {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+
+/* Aca empieza Ayuda*/
+
+
+.ayuda img {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    margin: 30px;
+
 }
