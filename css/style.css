@@ -219,8 +219,6 @@
 /* Aca empieza Contactenos*/
 
 .contactenos {
-    background-color: rgba(19, 18, 18, 0.89);
-    color: white;
     font-family: Arial;
 }
 
@@ -228,8 +226,10 @@
     block-size: 200px;
 }
 
-.nombres1 {
-    color: white;
+.centrado {
+    display:flex;
+    align-items: center;
+    justify-items: center;
 }
 
 
@@ -237,9 +237,9 @@
 /* Aca empieza Terminos y condiciones */
 
 .terminos {
-    background-color: rgba(19, 18, 18, 0.89);
-    color: white;
     font-family: Arial;
+    color: rgb(70, 70, 70);
+    opacity: normal;
 }
 
 .terminos ol {
