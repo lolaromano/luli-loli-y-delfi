@@ -265,3 +265,20 @@
     padding: 10px;
 
 }
+.preguntasfrecuentes{
+    display: flex;
+    border: solid 3px rgb(227, 184, 255); 
+    padding: 10px;
+    align-items: center;
+    font-size: medium;
+    color: rgb(78, 78, 78);
+    justify-content: flex-start;
+    width: 8%;
+}
+.preguntas {
+  list-style-type: square; 
+  font-family: Arial;
+  color: rgb(70, 70, 70);
+  opacity: normal;
+font-size: larger;
+}
