@@ -42,6 +42,10 @@
     padding: 10PX;
 }
 
+.fondo{
+    background-color:rgb(191, 101, 243) ;
+}
+
 .footer ul{
     list-style: none;
     display: flex;
@@ -63,6 +67,7 @@
         font-family: Arial;
         color: black;
         width: 100%;
+        background-color: white;
     }
 
 .PeliculasMasRecientes {
@@ -246,11 +251,14 @@
 
 /* Aca empieza Ayuda*/
 
+.ayuda {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(191, 101, 243);
+}
 
 .ayuda img {
-    width: 150px;
-    height: 150px;
-    padding: 30px;
-    margin: 30px;
-
+    width: 60px;
+    height: 60px;
+    padding: 10px;
 }
