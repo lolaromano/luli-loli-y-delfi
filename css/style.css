@@ -82,6 +82,7 @@
 
 .PeliculasMasRecientes img {
     width: 190px;
+    height: 285px;
 }
 
 .PeliculasMasVistas {
@@ -94,6 +95,7 @@
 
 .PeliculasMasVistas img {
     width: 190px;
+    height: 285px;
 }
 
 .SeriesMasRecientes {
@@ -106,6 +108,7 @@
 
 .SeriesMasRecientes img {
     width: 190px;
+    height: 285px;
 }
 
 .SeriesMasVistas {
@@ -118,7 +121,12 @@
 
 .SeriesMasVistas img {
     width: 190px;
+    height: 285px;
 }
+
+
+
+/* Aca empieza descripcion KB */
 
 .descripKB {
     display: flex;
@@ -163,6 +171,7 @@
 
 .PeliculasDeAccion img{
     width: 190px;
+    height: 285px;
 }
 
 .SeriesDeAccion{
@@ -175,6 +184,7 @@
 
 .SeriesDeAccion img {
     width: 190px;
+    height: 285px;
 }
 
 /* Acá empieza Series y Peliculas */
@@ -189,6 +199,7 @@
 
 .PopularesEniChill img {
     width: 190px;
+    height: 285px;
 }
 
 .Tendencias {
@@ -201,6 +212,7 @@
 
 .Tendencias img {
     width: 190px;
+    height: 285px;
 }
 
 .NuevosLanzamientos {
@@ -213,6 +225,7 @@
 
 .NuevosLanzamientos img {
     width: 190px;
+    height: 285px;
 }
 
 .Documentales {
@@ -225,6 +238,7 @@
 
 .Documentales img {
     width: 190px;
+    height: 285px;
 }
 
 .FavoritosDeSiempre {
@@ -237,6 +251,7 @@
 
 .FavoritosDeSiempre img {
     width: 190px;
+    height: 285px;
 }
 
 
@@ -289,7 +304,7 @@
     font-size: medium;
     color: rgb(78, 78, 78);
     justify-content: flex-start;
-    width: 8%;
+    width: 16.5%;
 }
 .preguntas {
   list-style-type: square; 
