@@ -60,17 +60,17 @@
     font-weight: bolder;
     font-family: 'Arial Narrow Bold';
     text-decoration: none;
-    }
+}
     
-    .nombres {
-        font-size: 13px;
-        font-family: Arial;
-        color: black;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-    }
+.nombres {
+    font-size: 13px;
+    font-family: Arial;
+    color: black;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
 
 .PeliculasMasRecientes {
     display: flex;
@@ -120,6 +120,24 @@
     width: 190px;
 }
 
+.descripKB {
+    display: flex;
+    flex-direction: row;
+}
+
+.kissingbooth {
+    color: green;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.listKB {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    padding: 20px;
+}
 
 
 /* Acá empieza Generos */
@@ -234,7 +252,6 @@
 }
 
 
-
 /* Aca empieza Terminos y condiciones */
 
 .terminos {
@@ -248,7 +265,6 @@
     font-size: 18px;
     line-height: 18px;
 }
-
 
 
 /* Aca empieza Ayuda*/
@@ -280,5 +296,5 @@
   font-family: Arial;
   color: rgb(70, 70, 70);
   opacity: normal;
-font-size: larger;
+  font-size: larger;
 }
