@@ -148,6 +148,7 @@
 }
 
 
+
 /* Acá empieza Generos */
 
 .GenerosAccion{
@@ -186,6 +187,8 @@
     width: 190px;
     height: 285px;
 }
+
+
 
 /* Acá empieza Series y Peliculas */
 
@@ -267,6 +270,7 @@
 }
 
 
+
 /* Aca empieza Terminos y condiciones */
 
 .terminos {
@@ -280,6 +284,7 @@
     font-size: 18px;
     line-height: 18px;
 }
+
 
 
 /* Aca empieza Ayuda*/
@@ -296,6 +301,7 @@
     padding: 10px;
 
 }
+
 .preguntasfrecuentes{
     display: flex;
     border: solid 3px rgb(227, 184, 255); 
@@ -306,6 +312,7 @@
     justify-content: flex-start;
     width: 16.5%;
 }
+
 .preguntas {
   list-style-type: square; 
   font-family: Arial;
@@ -325,5 +332,5 @@
 }
 
 @media only screen and (max-width: 1024px){
-    
+
 }
