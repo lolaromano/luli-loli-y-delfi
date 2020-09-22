@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
 .encabezado ul{
     list-style: none;
     display: flex;
@@ -263,11 +266,13 @@
 
 .contactenos {
     font-family: Arial;
+    color: white;
 }
 
 .mensaje {
     block-size: 200px;
 }
+
 
 
 
@@ -334,3 +339,4 @@
 @media only screen and (max-width: 1024px){
 
 }
+
