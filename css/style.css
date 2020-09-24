@@ -4,7 +4,10 @@
 
 body{
     background-color: black;
+}
 
+.logo img{
+   width: 100px;
 }
 
 .encabezado ul {
@@ -24,7 +27,6 @@ body{
     padding: 0%;
 }
 
-
 .buscador {
     list-style: none;
     display: flex;
@@ -42,9 +44,10 @@ body{
 .buscador img {
     width: 20px;
 }
+
 .titulos {
     display: flex;
-    font-size: 20px;
+    font-size: 23px;
     font-style: normal;
     background-color: rgb(227, 184, 255);
     font-family: montserrat;
@@ -83,25 +86,6 @@ body{
     height: 50px;
     padding: 10px;
 
-}
-
-.preguntasfrecuentes{
-    display: flex;
-    border: solid 3px rgb(227, 184, 255); 
-    padding: 10px;
-    align-items: center;
-    font-size: medium;
-    color: white;
-    justify-content: flex-start;
-    width: 16.5%;
-}
-
-.preguntas {
-  list-style-type: square; 
-  font-family: Arial;
-  color: white;
-  opacity: normal;
-  font-size: larger;
 }
 
 .nombres {
@@ -204,10 +188,10 @@ body{
     border: solid 3px rgb(227, 184, 255); 
     padding: 10px;
     align-items: center;
-    font-size: small;
+    font-size: normal;
     color: white;
     justify-content: flex-start;
-    width: 8%;
+    width: 13.5%;
     
 }
 
@@ -317,23 +301,64 @@ body{
 
 .mensaje {
     block-size: 200px;
+    width: 478px;
 }
 
+.cuadrado {
+    block-size: 20px;
+    width: 250px;
+}
 
 
 
 /* Aca empieza Terminos y condiciones */
 
-.terminos {
+ .terminos {
     font-family: Arial;
     color: white;
     opacity: normal;
 }
 
-.terminos ol {
+.terminos1 {
     text-align: justify;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 8px;
+}
+
+.terminos2 {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.terminos3 li{
+    text-align: justify;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+
+
+/* Aca empieza Ayuda */
+
+.preguntasfrecuentes {
+    display: flex;
+    border: solid 3px rgb(227, 184, 255); 
+    padding: 10px;
+    align-items: center;
+    font-size: medium;
+    color: white;
+    justify-content: flex-start;
+    width: 19%;
+}
+
+
+.preguntas {
+  list-style-type: square; 
+  font-family: Arial;
+  color: white;
+  opacity: normal;
+  font-size: larger;
 }
 
 
@@ -348,7 +373,25 @@ body{
 
 
 
-@media only screen and (max-width: 420px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+    .logo img{
+        width: 38px;
+     }
  
     .encabezado ul {
         list-style: none;
@@ -405,7 +448,7 @@ body{
         justify-content: space-around;
         font-style: inherit;
         font-stretch: semi-expanded;
-        font-size: x-small;
+        font-size: 7px;
         background-color:rgb(227, 184, 255);
         padding: 5px;
         color: rgb(70, 70, 70);
@@ -427,35 +470,16 @@ body{
         padding: 10px;
     
     }
-    
-    .preguntasfrecuentes{
-        display: flex;
-        border: solid 3px rgb(227, 184, 255); 
-        padding: 10px;
-        align-items: center;
-        font-size: medium;
-        color: white;
-        justify-content: flex-start;
-        width: 16.5%;
-    }
-    
-    .preguntas {
-      list-style-type: square; 
-      font-family: Arial;
-      color: white;
-      opacity: normal;
-      font-size: larger;
-    }
-    
         
     .nombres {
-        font-size: 13px;
+        font-size: 6px;
         font-family: Arial;
         color: black;
         width: 100%;
         background-color: rgb(227, 184, 255);
         display: flex;
         justify-content: center;
+        padding: 5px;
     }
     
     .PeliculasMasRecientes {
@@ -509,17 +533,261 @@ body{
         width: 100px;
         height: 140px;
     }
+
     
+
+        /* Acá empieza Generos */
+
+    .GenerosAccion{
+        display: flex;
+        border: solid 2px rgb(227, 184, 255); 
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        font-size: 10px;
+        color: white;
+        justify-content: flex-start;
+        width: 25%;
+    }
+
+    .PeliculasDeAccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .PeliculasDeAccion img{
+        width: 100px;
+        height: 140px;
+    }
+
+    .SeriesDeAccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .SeriesDeAccion img {
+        width: 100px;
+        height: 140px;
+    }
+
+
+
+    /* Aca empieza descripcion KB */
+
+    .descripKB {
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .kissingbooth {
+        color: green;
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .listKB {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;    
+        padding: 20px;
+        color: white;
+        font-size: 13px;
+    }
+
+    .parrafodescripcion {
+        color: white;
+        font-size: 13px;
+    }
+
+
+
+    /* Acá empieza Series y Peliculas */
+
+    .PopularesEniChill {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .PopularesEniChill img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .Tendencias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .Tendencias img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .NuevosLanzamientos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .NuevosLanzamientos img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .Documentales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .Documentales img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .FavoritosDeSiempre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 20px;
+    }
+
+    .FavoritosDeSiempre img {
+        width: 100px;
+        height: 140px;
+    }
+
+
+
+    /* Aca empieza Contactenos*/
+
+    .contactenos {
+        font-family: Arial;
+        color: white;
+        font-size: x-small;
+    }
+
+    .mensaje {
+        block-size: 100px;
+        width: 360px;
+    }
+
+    .cuadrado {
+        block-size: 20px;
+        width: 218px;
+    }
+
+    .enviar {
+       font-size: 8px;
+    }
+
+
+
+    /* Aca empieza Terminos y condiciones */
+
+    .terminos {
+        font-family: Arial;
+        color: white;
+        opacity: normal;
+    }
+
+    .terminos1 {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    .terminos2 {
+        text-align: justify;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .terminos3 li{
+        text-align: justify;
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+
+
+    /* Aca empieza Ayuda */
+
+    .preguntasfrecuentes {
+        display: flex;
+        border: solid 2px rgb(227, 184, 255); 
+        padding: 10px;
+        align-items: center;
+        font-size: x-small;
+        color: white;
+        justify-content: flex-start;
+        width: 49%;
+        height: 5px;
+    }
+
+    .preguntas ul{
+    list-style-type: square; 
+    font-family: Arial;
+    color: white;
+    opacity: normal;
+    font-size: x-small;
+    }
+
 }
 
 
-@media only screen and (max-width: 768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+   
+
 
 }
 
-@media only screen and (max-width: 1024px){
 
-}
+
+
+
+
+
 
 /*
 .encabezado .logo {
