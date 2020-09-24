@@ -314,7 +314,7 @@ body{
 
 .mensaje {
     block-size: 200px;
-    width: 478px;
+    width: 475px;
 }
 
 .cuadrado {
@@ -597,7 +597,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .PeliculasDeAccion img{
@@ -610,7 +610,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .SeriesDeAccion img {
@@ -657,7 +657,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .PopularesEniChill img {
@@ -670,7 +670,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .Tendencias img {
@@ -683,7 +683,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .NuevosLanzamientos img {
@@ -696,7 +696,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .Documentales img {
@@ -709,7 +709,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 20px;
+        padding: 10px;
     }
 
     .FavoritosDeSiempre img {
@@ -854,6 +854,24 @@ body{
         text-decoration: none;
     }
 
+    .buscador {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: small;
+        color: grey;
+        border: solid 3px rgb(227, 184, 255);
+        background-color: white;
+        height: 35px;
+        padding: 12px;
+    }
+
+    .buscador img {
+        width: 16px;
+    }
+
     .ayuda {
         background-color: black;
     }
@@ -905,7 +923,7 @@ body{
 
     .mensaje {
         block-size: 100px;
-        width: 360px;
+        width: 359px;
     }
 
     .cuadrado {
@@ -958,7 +976,7 @@ body{
         color: white;
         justify-content: flex-start;
         width: 23.2%;
-        height: 5px;
+        height: 4px;
     }
 
     .preguntas ul{
