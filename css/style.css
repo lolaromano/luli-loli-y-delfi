@@ -79,6 +79,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgb(191, 101, 243);
+    padding: 5px;
 }
 
 .ayuda img {
@@ -89,13 +90,15 @@ body{
 }
 
 .nombres {
-    font-size: 13px;
+    font-size: 11px;
     font-family: Arial;
     color: black;
     width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 27px;
 }
 
 .PeliculasMasRecientes {
@@ -192,7 +195,6 @@ body{
     color: white;
     justify-content: flex-start;
     width: 13.5%;
-    
 }
 
 .PeliculasDeAccion{
@@ -472,11 +474,12 @@ body{
         justify-content: center;
         align-items: center;
         background-color: black;
+        padding: none;
     }
     
     .ayuda img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         padding: 10px;
     
     }
@@ -489,7 +492,11 @@ body{
         background-color: rgb(227, 184, 255);
         display: flex;
         justify-content: center;
-        padding: 5px;
+        padding: 0px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .PeliculasMasRecientes {
@@ -555,7 +562,7 @@ body{
         padding-top: 5px;
         padding-bottom: 5px;
         align-items: center;
-        font-size: 10px;
+        font-size: 7px;
         color: white;
         justify-content: flex-start;
         width: 25%;
@@ -823,6 +830,17 @@ body{
         text-decoration: none;
     }
 
+    .ayuda {
+        background-color: black;
+    }
+
+    .nombres {
+        font-size: 8px;
+        background-color: rgb(227, 184, 255);
+        padding: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
 
     /* Aca empieza Generos */
@@ -903,7 +921,7 @@ body{
         font-size: x-small;
         color: white;
         justify-content: flex-start;
-        width: 49%;
+        width: 23.2%;
         height: 5px;
     }
 
