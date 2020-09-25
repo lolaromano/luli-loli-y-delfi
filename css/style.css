@@ -844,6 +844,8 @@ body{
 
 
 
+
+
 @media only screen and (max-width: 768px) {
 
     .fondo{
@@ -896,7 +898,65 @@ body{
         margin-bottom: 5px;
     }
 
+    .PeliculasMasRecientes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 50px;
+        margin: 20px;
+    }
+    
+    .PeliculasMasRecientes img {
+        width: 200px;
+        height: 295px;
+    }
+    
+    .PeliculasMasVistas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 50px;
+        margin: 20px;
+    }
+    
+    .PeliculasMasVistas img {
+        width: 200px;
+        height: 295px;
+    }
+    
+    .SeriesMasRecientes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 50px;
+        margin: 20px;
+    }
+    
+    .SeriesMasRecientes img {
+        width: 200px;
+        height: 295px;
+    }
+    
+    .SeriesMasVistas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        padding: 50px;
+        margin: 20px;
+    }
+    
+    .SeriesMasVistas img {
+        width: 200px;
+        height: 295px;
+    }
 
+    .mobilehide {
+        visibility: hidden;
+    }
     /* Aca empieza Generos */
 
     .GenerosAccion1 {
@@ -924,6 +984,102 @@ body{
         justify-content: flex-start;
         width: 28%;
     }
+
+    .PeliculasDeAccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 50px;
+    margin: 20px;
+}
+
+.PeliculasDeAccion img{
+    width: 200px;
+    height: 295px;
+}
+
+.SeriesDeAccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 50px;
+    margin: 20px;
+}
+
+.SeriesDeAccion img {
+    width: 200px;
+    height: 295px;
+}
+
+ /* Acá empieza Series y Peliculas */
+
+ .PopularesEniChill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 10px;
+}
+
+.PopularesEniChill img {
+    width: 120px;
+    height: 140px;
+}
+
+.Tendencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 10px;
+}
+
+.Tendencias img {
+    width: 120px;
+    height: 140px;
+}
+
+.NuevosLanzamientos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 10px;
+}
+
+.NuevosLanzamientos img {
+    width: 120px;
+    height: 140px;
+}
+
+.Documentales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 50px;
+    margin: 20px;
+}
+
+.Documentales img {
+    width: 120px;
+    height: 140px;
+}
+
+.FavoritosDeSiempre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 3px rgb(227, 184, 255);
+    padding: 10px;
+}
+
+.FavoritosDeSiempre img {
+    width: 120px;
+    height: 140px;
+}
 
     /* Aca empieza Contactenos*/
 
