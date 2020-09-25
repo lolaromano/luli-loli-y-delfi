@@ -66,7 +66,7 @@ body{
     justify-content: space-around;
     font-style: inherit;
     font-stretch: semi-expanded;
-    font-size: normal;
+    font-size: 20px;
     background-color:rgb(191, 101, 243);
     padding: 15px;
     color: rgb(70, 70, 70);
@@ -83,14 +83,14 @@ body{
 }
 
 .ayuda img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     padding: 10px;
 
 }
 
 .nombres {
-    font-size: 11px;
+    font-size: 14px;
     font-family: Arial;
     color: black;
     width: 100%;
@@ -412,6 +412,51 @@ body{
 
 @media only screen and (max-width: 768px) {
 
+    .encabezado ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-style: inherit;
+        font-stretch: semi-expanded;
+        font-size: 23px;
+        font-weight: bolder;
+        background-color: rgb(191, 101, 243);
+        font-family: 'Arial Narrow Bold';
+        color: white;
+        height: 130px;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .buscador {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 16px;
+        color: grey;
+        border: solid 3px rgb(227, 184, 255);
+        background-color: white;
+        height: 35px;
+        padding: 12px;
+    }
+
+    .buscador img {
+        width: 18px;
+    }
+
+    .titulos {
+        display: flex;
+        font-size: 25px;
+        font-style: normal;
+        background-color: rgb(227, 184, 255);
+        font-family: montserrat;
+        color: rgb(41, 39, 39);
+        padding: 10PX;
+    }
+
     .fondo{
         background-color:black ;
     }
@@ -423,7 +468,7 @@ body{
         justify-content: space-around;
         font-style: inherit;
         font-stretch: semi-expanded;
-        font-size: 10px;
+        font-size: 18px;
         background-color:rgb(227, 184, 255);
         padding: 5px;
         color: rgb(70, 70, 70);
@@ -432,34 +477,25 @@ body{
         text-decoration: none;
     }
 
-    .buscador {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: small;
-        color: grey;
-        border: solid 3px rgb(227, 184, 255);
-        background-color: white;
-        height: 35px;
-        padding: 12px;
-    }
-
-    .buscador img {
-        width: 16px;
-    }
-
     .ayuda {
         background-color: black;
     }
 
+    .ayuda img {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    
+    }
+
     .nombres {
-        font-size: 8px;
+        font-size: 15px;
         background-color: rgb(227, 184, 255);
         padding: 2px;
         margin-top: 5px;
         margin-bottom: 5px;
+        height: 25px;
+        align-items: center;
     }
 
     .PeliculasMasRecientes {
@@ -840,8 +876,8 @@ body{
     }
     
     .ayuda img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         padding: 10px;
     
     }
