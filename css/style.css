@@ -774,7 +774,7 @@ body{
         justify-content: space-around;
         font-style: inherit;
         font-stretch: semi-expanded;
-        font-size: 6px;
+        font-size: 10px;
         font-weight: bolder;
         background-color: rgb(191, 101, 243);
         font-family: 'Arial Narrow Bold';
@@ -789,7 +789,7 @@ body{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        font-size: 7px;
+        font-size: 8px;
         color: grey;
         border: solid 1px rgb(227, 184, 255);
         background-color: white;
@@ -803,12 +803,12 @@ body{
 
     .titulos {
         display: flex;
-        font-size: 10px;
+        font-size: 15px;
         font-style: normal;
         background-color: rgb(227, 184, 255);
         font-family: montserrat;
         color: rgb(41, 39, 39);
-        padding: 6PX;
+        padding: 6px;
     }
     
     .fondo{
@@ -822,7 +822,7 @@ body{
         justify-content: space-around;
         font-style: inherit;
         font-stretch: semi-expanded;
-        font-size: 7px;
+        font-size: 12px;
         background-color:rgb(227, 184, 255);
         padding: 5px;
         color: rgb(70, 70, 70);
@@ -847,7 +847,7 @@ body{
     }
         
     .nombres {
-        font-size: 6px;
+        font-size: 10px;
         font-family: Arial;
         color: black;
         width: 100%;
@@ -859,6 +859,8 @@ body{
         margin-bottom: 7px;
         margin-left: 0px;
         margin-right: 0px;
+        height: 20px;
+        align-items: center;
     }
     
     .PeliculasMasRecientes {
