@@ -519,7 +519,7 @@ body{
     }
     
     .PeliculasMasRecientes img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
     
@@ -532,7 +532,7 @@ body{
     }
     
     .PeliculasMasVistas img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
     
@@ -545,7 +545,7 @@ body{
     }
     
     .SeriesMasRecientes img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
     
@@ -558,11 +558,15 @@ body{
     }
     
     .SeriesMasVistas img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
-    
+    .mobilehide {
+        visibility: hidden;
+    }
+
+
 
     /* Acá empieza Generos */
 
@@ -601,7 +605,7 @@ body{
     }
 
     .PeliculasDeAccion img{
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
@@ -614,8 +618,12 @@ body{
     }
 
     .SeriesDeAccion img {
-        width: 100px;
+        width: 120px;
         height: 140px;
+    }
+
+    .mobilehide {
+        visibility: hidden;
     }
 
 
@@ -661,7 +669,7 @@ body{
     }
 
     .PopularesEniChill img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
@@ -674,7 +682,7 @@ body{
     }
 
     .Tendencias img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
@@ -687,7 +695,7 @@ body{
     }
 
     .NuevosLanzamientos img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
@@ -700,7 +708,7 @@ body{
     }
 
     .Documentales img {
-        width: 100px;
+        width: 120px;
         height: 140px;
     }
 
@@ -713,8 +721,12 @@ body{
     }
 
     .FavoritosDeSiempre img {
-        width: 100px;
+        width: 120px;
         height: 140px;
+    }
+
+    .mobilehide {
+        visibility: hidden;
     }
 
 
