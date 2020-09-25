@@ -559,6 +559,8 @@ body{
         display: none;
     }
 
+
+
     /* Aca empieza Generos */
 
     .GenerosAccion1 {
@@ -614,6 +616,8 @@ body{
         width: 200px;
         height: 295px;
     }
+
+
 
     /* Acá empieza Series y Peliculas */
 
@@ -686,6 +690,8 @@ body{
         width: 200px;
         height: 295px;
     }
+
+
 
     /* Aca empieza Contactenos*/
 
@@ -761,6 +767,8 @@ body{
     font-size: x-small;
     }
 }
+
+
 
 
 
@@ -1208,128 +1216,3 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.encabezado .logo {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 60px;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 300px;
-}
-
-.encabezado .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-style: inherit;
-    font-stretch: semi-expanded;
-    font-size: 20px;
-    font-weight: bolder;
-    background-color: rgb(191, 101, 243);
-    font-family: 'Arial Narrow Bold';
-    color: white;
-    height: 130px;
-    align-items: center;
-    padding: 0%;
-}
-
-
-
-
-
-media
-
-
-.encabezado .logo {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        width: 20px;
-    }
-
-    .menu ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 300px;
-    }
-    
-    .encabezado .menu {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        font-style: inherit;
-        font-stretch: semi-expanded;
-        font-size: 20px;
-        font-weight: bolder;
-        background-color: rgb(191, 101, 243);
-        font-family: 'Arial Narrow Bold';
-        color: white;
-        height: 130px;
-        align-items: center;
-        padding: 0%;
-    }
-*/
