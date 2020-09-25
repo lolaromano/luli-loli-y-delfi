@@ -186,7 +186,7 @@ body{
 
 /* Acá empieza Generos */
 
-.GenerosAccion1{
+.GenerosAccion1 {
     display: flex;
     border: solid 3px rgb(227, 184, 255); 
     padding: 10px;
@@ -208,7 +208,7 @@ body{
     width: 15%;
 }
 
-.PeliculasDeAccion{
+.PeliculasDeAccion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -216,12 +216,12 @@ body{
     padding: 20px;
 }
 
-.PeliculasDeAccion img{
+.PeliculasDeAccion img {
     width: 190px;
     height: 285px;
 }
 
-.SeriesDeAccion{
+.SeriesDeAccion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -404,6 +404,12 @@ body{
 
 
 
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
 
     .fondo{
@@ -461,8 +467,8 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 50px;
-        margin: 20px;
+        padding: 35px;
+        margin: 0px;
     }
     
     .PeliculasMasRecientes img {
@@ -475,8 +481,8 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 50px;
-        margin: 20px;
+        padding: 35px;
+        margin: 0px;
     }
     
     .PeliculasMasVistas img {
@@ -489,8 +495,8 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 50px;
-        margin: 20px;
+        padding: 35px;
+        margin: 0px;
     }
     
     .SeriesMasRecientes img {
@@ -503,8 +509,8 @@ body{
         flex-direction: row;
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
-        padding: 50px;
-        margin: 20px;
+        padding: 35px;
+        margin: 0px;
     }
     
     .SeriesMasVistas img {
@@ -513,7 +519,7 @@ body{
     }
 
     .mobilehide {
-        visibility: hidden;
+        display: none;
     }
 
     /* Aca empieza Generos */
@@ -545,104 +551,104 @@ body{
     }
 
     .PeliculasDeAccion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.PeliculasDeAccion img{
-    width: 200px;
-    height: 295px;
-}
+    .PeliculasDeAccion img{
+        width: 200px;
+        height: 295px;
+    }
 
-.SeriesDeAccion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .SeriesDeAccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.SeriesDeAccion img {
-    width: 200px;
-    height: 295px;
-}
+    .SeriesDeAccion img {
+        width: 200px;
+        height: 295px;
+    }
 
- /* Acá empieza Series y Peliculas */
+    /* Acá empieza Series y Peliculas */
 
- .PopularesEniChill {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .PopularesEniChill {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.PopularesEniChill img {
-    width: 200px;
-    height: 195px;
-}
+    .PopularesEniChill img {
+        width: 200px;
+        height: 295px;
+    }
 
-.Tendencias {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .Tendencias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.Tendencias img {
-    width: 200px;
-    height: 195px;
-}
+    .Tendencias img {
+        width: 200px;
+        height: 295px;
+    }
 
-.NuevosLanzamientos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .NuevosLanzamientos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.NuevosLanzamientos img {
-    width: 200px;
-    height: 195px;
-}
+    .NuevosLanzamientos img {
+        width: 200px;
+        height: 295px;
+    }
 
-.Documentales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .Documentales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.Documentales img {
-    width: 200px;
-    height: 195px;
-}
+    .Documentales img {
+        width: 200px;
+        height: 295px;
+    }
 
-.FavoritosDeSiempre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
-    padding: 50px;
-    margin: 20px;
-}
+    .FavoritosDeSiempre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 3px rgb(227, 184, 255);
+        margin: 0px;
+        padding: 35px;
+    }
 
-.FavoritosDeSiempre img {
-    width: 200px;
-    height: 195px;
-}
+    .FavoritosDeSiempre img {
+        width: 200px;
+        height: 295px;
+    }
 
     /* Aca empieza Contactenos*/
 
@@ -670,7 +676,7 @@ body{
 
     /* Aca empieza Terminos y condiciones */
 
-   .terminos {
+    .terminos {
     font-family: Arial;
     color: white;
     opacity: normal;
@@ -783,16 +789,16 @@ body{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        font-size: 5px;
+        font-size: 7px;
         color: grey;
         border: solid 1px rgb(227, 184, 255);
         background-color: white;
-        height: 9px;
-        padding: 2px;
+        height: 18px;
+        padding: 6px;
     }
    
     .buscador img {
-        width: 5px;
+        width: 14px;
     }
 
     .titulos {
@@ -861,10 +867,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
     
     .PeliculasMasRecientes img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
     
@@ -874,10 +881,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
     
     .PeliculasMasVistas img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
     
@@ -887,28 +895,30 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
     
     .SeriesMasRecientes img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
     
     .SeriesMasVistas {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
+        justify-content: space-between;
     }
     
     .SeriesMasVistas img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
     .mobilehide {
-        visibility: hidden;
+        display: none;
     }
 
 
@@ -947,10 +957,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .PeliculasDeAccion img{
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
@@ -960,15 +971,16 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .SeriesDeAccion img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
     .mobilehide {
-        visibility: hidden;
+        display: none;
     }
 
 
@@ -1011,10 +1023,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .PopularesEniChill img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
@@ -1024,10 +1037,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .Tendencias img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
@@ -1037,10 +1051,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .NuevosLanzamientos img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
@@ -1050,10 +1065,11 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .Documentales img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
@@ -1063,15 +1079,16 @@ body{
         justify-content: space-between;
         border: solid 3px rgb(227, 184, 255);
         padding: 10px;
+        margin: 0px;
     }
 
     .FavoritosDeSiempre img {
-        width: 120px;
+        width: 100px;
         height: 140px;
     }
 
     .mobilehide {
-        visibility: hidden;
+        display: none;
     }
 
 
