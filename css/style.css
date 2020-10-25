@@ -107,6 +107,7 @@ body{
     justify-content: space-between;
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
+    list-style: none;
 }
 
 .PeliculasMasRecientes img {
@@ -120,6 +121,7 @@ body{
     justify-content: space-between;
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
+    list-style: none;
 }
 
 .PeliculasMasVistas img {
@@ -133,6 +135,7 @@ body{
     justify-content: space-between;
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
+    list-style: none;
 }
 
 .SeriesMasRecientes img {
@@ -146,6 +149,7 @@ body{
     justify-content: space-between;
     border: solid 3px rgb(227, 184, 255);
     padding: 20px;
+    list-style: none;
 }
 
 .SeriesMasVistas img {
