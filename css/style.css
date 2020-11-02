@@ -53,6 +53,7 @@ a:hover{
     width: 20px;
 }
 
+
 .titulos {
     display: flex;
     font-size: 23px;
@@ -65,7 +66,7 @@ a:hover{
 }
 
 .fondo{
-    /*background-color:rgb(191, 101, 243)*/;
+    /*background-color:rgb(191, 101, 243)*/
     background-color: rgb(20, 20, 20); 
 }
 
@@ -94,7 +95,7 @@ a:hover{
 .ayuda {
     display: flex;
     justify-content: center;
-    background-color: rgb(20, 20, 20));
+    background-color: rgb(20, 20, 20);
     padding: 5px;
 }
 
