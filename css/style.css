@@ -27,14 +27,22 @@ body{
     align-items: center;
     padding: 0%;
 }
+
 .encabezado a {
     color: white;
     text-decoration: none;
 }
+
+.navbar {
+    display: flex;
+    align-items: flex-end !important;
+}
+
 a:hover{
     color: #8f8f8f;
 
 }
+
 .buscador {
     list-style: none;
     display: flex;
@@ -43,7 +51,7 @@ a:hover{
     align-items: center;
     font-size: small;
     color: grey;
-    /* border: solid 3px rgb(227, 184, 255); */
+    /* border: solid 3px rgb(227, 184, 255);*/
     background-color: white;
     height: 40px;
     padding: 20px;
@@ -123,7 +131,7 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     /* border: solid 3px rgb(227, 184, 255); */
-    padding: 20px;
+    padding: 0px;
     list-style: none;
 }
 
@@ -897,18 +905,20 @@ a:hover{
         text-decoration: none;
     }
 
-    .ayuda {
+    .ayuda{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: white;
         padding: none;
+        color: violet;
     }
     
     .ayuda img {
         width: 50px;
         height: 50px;
         padding: 10px;
+        
     
     }
         
