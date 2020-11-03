@@ -5,24 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iChill</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="terminos">
 
     <header class="encabezado">
-        <nav>
-            <ul> 
-                <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li>
-                <li><a href="p1-inicio.html">INICIO</a></li>
-                <li><a href="p2-generos.html">GENEROS</a></li>
-                <li><a href="p3-series.html">SERIES</a></li>
-                <li><a href="p4-peliculas.html">PELÍCULAS</a></li>
-                <li> <a href=""></a> <h5 class="buscador"> <img src="https://images.assetsdelivery.com/compings_v2/aratehortua/aratehortua1904/aratehortua190400075.jpg" alt="buscador" width="20px">
-                Títulos, géneros, etc </h5></li>
-            </ul>
+        
+        <nav class="navbar uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                        <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
+                        <li><a href="p1-inicio.html">Inicio</a></li>
+                        <li><a href="p2-generos.html">Géneros</a></li>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#"></a></li>
+                                <li><a href="#">Acción</a></li>
+                                <li><a href="#">Ciencia ficción y fantasía</a></li>
+                                <li><a href="#">Dramas</a></li>
+                                <li><a href="#">Misterios</a></li>
+                                <li><a href="#">Policiales</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Terror</a></li>
+                            </ul>
+                        </div>
+                                <li><a href="p3-series.html">Series</a></li>
+                                <li><a href="p4-peliculas.html">Películas</a></li>
+                                <li><div class="box">
+                                    <div class="container-3">
+                                        <span class="icon"><i class="fa fa-search"></i></span>
+                                        <input type="search" id="search" placeholder="Search..." />
+                                    </div>
+                                </div></li>
+                </ul>
+            </div>
         </nav>
-    </header>
+
+    </header> 
 
                 <h1 class="terminos1">Terminos y Condiciones del servicio</h1>
                 <h4 class="terminos2">Al realizar el pago, confirma que ha leído, entendido y aceptado los siguientes términos y condiciones de estos Términos y Condiciones del Servicio. Si no está de acuerdo con alguno de estos términos, no debe de realizar algún pago.</h4>

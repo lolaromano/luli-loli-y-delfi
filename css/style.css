@@ -10,7 +10,7 @@ body{
    width: 100px;
 }
 
-.encabezado ul {
+.encabezado ul{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -22,15 +22,9 @@ body{
    /* background-color: rgb(191, 101, 243); */
     background-color: #18171c;
     font-family: 'Arial Narrow Bold';
-    color: white;
     height: 130px;
     align-items: center;
     padding: 0%;
-}
-
-.encabezado a {
-    color: white;
-    text-decoration: none;
 }
 
 .navbar {
@@ -43,34 +37,23 @@ a:hover{
 
 }
 
-.buscador {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: small;
-    color: grey;
-    /* border: solid 3px rgb(227, 184, 255);*/
-    background-color: white;
-    height: 40px;
-    padding: 20px;
+.banner img{
+    width: 800px;
+    height: 400px;
 }
-
-.buscador img {
-    width: 20px;
-}
-
 
 .titulos {
     display: flex;
-    font-size: 23px;
-    font-style: normal;
+    font-style: bold;
     color: white;
     /*background-color: rgb(227, 184, 255);*/
     font-family: montserrat;
    /* color: rgb(41, 39, 39); */
     padding: 10PX;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
 }
 
 .fondo{
@@ -79,6 +62,7 @@ a:hover{
 }
 
 .footer ul{
+    margin-top: 50px;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -100,6 +84,7 @@ a:hover{
 a:hover{
     color: #8f8f8f;
 }
+
 .ayuda {
     display: flex;
     justify-content: center;
@@ -115,29 +100,30 @@ a:hover{
 }
 
 .nombres {
-    font-size: 14px;
+    font-size: 15px;
     font-family: Arial;
-    color: black;
+    font-weight: bolder;
     width: 100%;
-    background-color: white;
+    color: white;
     display: flex;
     justify-content: center;
     margin-top: 27px;
     margin-bottom: 27px;
+    background-color: #18171c;
 }
 
 .PeliculasMasRecientes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* border: solid 3px rgb(227, 184, 255); */
-    padding: 0px;
+    padding: 20px;
     list-style: none;
 }
 
 .PeliculasMasRecientes img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .PeliculasMasVistas {
@@ -150,8 +136,8 @@ a:hover{
 }
 
 .PeliculasMasVistas img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .SeriesMasRecientes {
@@ -164,8 +150,8 @@ a:hover{
 }
 
 .SeriesMasRecientes img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .SeriesMasVistas {
@@ -178,8 +164,8 @@ a:hover{
 }
 
 .SeriesMasVistas img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 
@@ -217,13 +203,16 @@ a:hover{
 
 .GenerosAccion1 {
     display: flex;
-    border: solid 3px rgb(227, 184, 255); 
     padding: 10px;
     align-items: center;
     font-size: normal;
-    color: white;
+    color: grey;
     justify-content: flex-start;
-    width: 13.5%;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+
 }
 
 .GenerosAccion2 {
@@ -246,8 +235,8 @@ a:hover{
 }
 
 .PeliculasDeAccion img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .SeriesDeAccion {
@@ -259,8 +248,8 @@ a:hover{
 }
 
 .SeriesDeAccion img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 
@@ -276,8 +265,8 @@ a:hover{
 }
 
 .PopularesEniChill img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .Tendencias {
@@ -289,8 +278,8 @@ a:hover{
 }
 
 .Tendencias img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .NuevosLanzamientos {
@@ -302,8 +291,8 @@ a:hover{
 }
 
 .NuevosLanzamientos img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .Documentales {
@@ -315,8 +304,8 @@ a:hover{
 }
 
 .Documentales img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 .FavoritosDeSiempre {
@@ -328,8 +317,8 @@ a:hover{
 }
 
 .FavoritosDeSiempre img {
-    width: 190px;
-    height: 285px;
+    width: 250px;
+    height: 350px;
 }
 
 
