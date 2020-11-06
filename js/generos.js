@@ -8,17 +8,12 @@ fetch (`https://api.themoviedb.org/3/movie/550?api_key=a7861c4f6175fa7e9d7361d67
     console.log(data);
 
     data.results.forEach(actor => {
-        document.querySelector ('').innerHTML += 
+        document.querySelector ('').innerHTML += //(aca esta el error, falta agregar algo)
         
     });
 })
 .catch(function (error){
-    console.log('El error fue: '+error);
+    console.log('El error fue: ' +error);
 })
-
-
-
-
-
 
 })
