@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com">
 </head>
 
 <body class="contactenos">
@@ -17,37 +18,36 @@
     <header class="encabezado">
         
         <nav class="navbar uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
+            <div class="uk-width-1-1">
+                <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
                         <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
                         <li><a href="p1-inicio.html">Inicio</a></li>
-                        <li><a href="p2-generos.html">Géneros</a></li>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#"></a></li>
-                                <li><a href="#">Acción</a></li>
-                                <li><a href="#">Ciencia ficción y fantasía</a></li>
-                                <li><a href="#">Dramas</a></li>
-                                <li><a href="#">Misterios</a></li>
-                                <li><a href="#">Policiales</a></li>
-                                <li><a href="#">Romance</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Terror</a></li>
-                            </ul>
-                        </div>
-                                <li><a href="p3-series.html">Series</a></li>
-                                <li><a href="p4-peliculas.html">Películas</a></li>
-                                <li><div class="box">
-                                    <div class="container-3">
-                                        <span class="icon"><i class="fa fa-search"></i></span>
-                                        <input type="search" id="search" placeholder="Search..." />
-                                    </div>
-                                </div></li>
+                        <li><a href="p2-generos.html">Géneros</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Acción</a></li>
+                                    <li class="uk-active"><a href="#">Ciencia ficción y fantasía</a></li>
+                                    <li class="uk-active"><a href="#">Dramas</a></li>
+                                    <li class="uk-active"><a href="#">Misterios</a></li>
+                                    <li class="uk-active"><a href="#">Policiales</a></li>
+                                    <li class="uk-active"><a href="#">Romance</a></li>
+                                    <li class="uk-active"><a href="#">Terror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="p3-series.html">Series</a></li>
+                        <li><a href="p4-peliculas.html">Películas</a></li>
+                        <li><div class="box">
+                            <div class="container-3">
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="search" id="search" placeholder="Search..." />
+                            </div>
+                        </div></li>
                 </ul>
             </div>
         </nav>
 
-    </header> 
+    </header>
   
     <form action="../form-result.php" target="_blank">
             <h4>
@@ -71,12 +71,13 @@
             </ul>          
         </nav>
 
-        <article class="ayuda">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://espai.es"> <img src="data:image/png;base64,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" alt="facebook"> </a> 
-            <a href="https://twitter.com/intent/tweet?text=&url=[url]&hashtags=[hashtag]"> <img src="https://s1.eestatic.com/2019/10/30/espana/Twitter-Propaganda_electoral-Espana_440718708_136657202_1706x960.jpg" alt="twitter"></a>
-            <a href="https://api.whatsapp.com/send?text="><img src="https://lh3.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="whatsapp"></a>
-            <a href="https://www.instagram.com/"> <img src="https://lh3.googleusercontent.com/2sREY-8UpjmaLDCTztldQf6u2RGUtuyf6VT5iyX3z53JS4TdvfQlX-rNChXKgpBYMw" alt="instagram"></a>
-        </article>
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.instagram.com" class="instagram"> <img src="https://i.pinimg.com/originals/5c/42/3c/5c423c3fd90167f0602d3369ddbc0621.png" alt="">  </a></li>
+                <li><a href="https://twitter.com" class="twitter"> <img src="https://www.vientosdeviaje.com/wp-content/uploads/2016/01/twitter-gris.png" alt="">  </a></li>
+                <li><a href="https://www.facebook.com" class="facebook"> <img src="https://i.pinimg.com/originals/04/a9/53/04a953e8b417481fa37773e29f698a36.png" alt=""> </a></li>
+            </ul>
+        </div>
 
         <h6 class="nombres"> Delfina Cardona, Lola Romano & Luisa Nazar</h6>
 

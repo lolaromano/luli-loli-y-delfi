@@ -85,20 +85,6 @@ a:hover{
     color: #8f8f8f;
 }
 
-.ayuda {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(20, 20, 20);
-    padding: 5px;
-}
-
-.ayuda img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-
-}
-
 .redes{
 display: flex;
 height: 100px;
@@ -242,18 +228,24 @@ transition: .2s;
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
+    border: solid 3px grey;
+    width: 180px;
 
 }
 
 .GenerosAccion2 {
     display: flex;
-    border: solid 3px rgb(227, 184, 255); 
     padding: 10px;
     align-items: center;
     font-size: normal;
-    color: white;
+    color: grey;
     justify-content: flex-start;
-    width: 15%;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    border: solid 3px grey;
+    width: 200px;
 }
 
 .PeliculasDeAccion {
@@ -404,13 +396,15 @@ transition: .2s;
 
 .preguntasfrecuentes {
     display: flex;
-    border: solid 3px rgb(227, 184, 255); 
+    border: solid 3px grey; 
     padding: 10px;
+    padding-top: 27px;
+    margin: 0px;
     align-items: center;
     font-size: medium;
     color: white;
-    justify-content: flex-start;
-    width: 19%;
+    justify-content: center;
+    width: 25%;
     height: 50px;
 }
 
@@ -797,13 +791,12 @@ transition: .2s;
 
     .preguntasfrecuentes {
         display: flex;
-        border: solid 2px rgb(227, 184, 255); 
         padding: 10px;
         align-items: center;
         font-size: x-small;
         color: white;
         justify-content: flex-start;
-        width: 23.2%;
+        width: 300px;
         height: 4px;
     }
 
