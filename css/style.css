@@ -86,17 +86,25 @@ a:hover{
     color: gray;
 }
 
-.redes{
+.fa{
+color: darkgray;
+}
+
+.fa:hover{
+    color: #8f8f8f;
+}
+.redes {
     display: flex;
     height: 100px;
     align-items: flex-end;
-    justify-content: center;;
+    justify-content: space-around;
+    padding: 100px;
 }
 
 .redes ul li {
     display: inline-block;
     margin: 0 5px;
-    width: 80px;
+    width: 100px;
     height: 50px;
     text-align: center;
 }
@@ -121,6 +129,10 @@ a:hover{
     height: 100px;
     width: 100px;
     margin: 0px;
+}
+
+.tmdb{
+    list-style: none;
 }
 
 .nombres {
