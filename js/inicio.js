@@ -1,32 +1,40 @@
 window.addEventListener('load',function(){
 
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c'
+    var linkImagen = "https://image.tmdb.org/t/p/w500"
 
+    console.log (linkImagen);
     
-    fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
     .then(function (response) {
         return response.json()
     })
-    .then(function (resultados) {
-        console.log (resultados);
+    .then(function (data) {
+        console.log (data);
 
-       var midiv = document.querySelector (".PeliculasMasRecientes");
+       var ul = document.querySelector (".PeliculasMasRecientes");
 
-        for (let index = 0; index < resultados.data; index++) {
-            const element = resultados.data [index];
-
-            midiv.innerHTML += `
-
-           
-
-            `
+        for (let index = 0; index < 6; index++) {
+            const element = data.results [index];
             
+            ul.innerHTML += `
+                    <li>
+                        <img src="${linkImagen}${element.poster_path}" alt=""> 
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </li>
+            `;
+
+            console.log(linkImagen + element.poster_path);
+
         }
                 
     })
     .catch(function (error){
         console.log('El error fue: '+error);
     })
+
+    
+
 
 /*
     fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)
