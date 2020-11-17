@@ -390,18 +390,22 @@ color: darkgray;
     text-align: justify;
     font-size: 30px;
     line-height: 8px;
+    color: white;
 }
 
 .terminos2 {
     text-align: justify;
     font-size: 20px;
     line-height: 24px;
+    color: white;
 }
 
-.terminos3 li{
+.terminos3 {
     text-align: justify;
     font-size: 17px;
     line-height: 22px;
+    color: black;
+
 }
 
 

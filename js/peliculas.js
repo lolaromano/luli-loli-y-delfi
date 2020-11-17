@@ -138,7 +138,42 @@ window.addEventListener('load',function(){
             console.log('El error fue: '+error);
         })
     
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log (data);
+
+    var ul = document.querySelector ("ul.FavoritosDeSiempre");
+
+        for (let index = 0; index < data.results.length; index++) {
+            const element = data.results [index];
+            
+            ul.innerHTML += `
+            <li>
+            <div class="uk-panel"> 
+                    <img src="${linkImagen}${element.poster_path}" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+            </li>
+    
+            `;
+
+            console.log(linkImagen + element.poster_path);
+
+        }
+                
+    })
+    .catch(function (error){
+        console.log('El error fue: '+error);
+    })
     
     
     
     })
+
+    
