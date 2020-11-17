@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iChill</title>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/peliculas.js"></script>
+<!-- UIKIT -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+<!-- CSS NOSOTRAS -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3286a7b3ee.js" crossorigin="anonymous"></script>
 </head>
@@ -49,58 +52,53 @@
     
     <div>
 
-        <section>
-                <h2 class="titulos">Populares en iChill</h2>
-            <article class="PopularesEniChill">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/91eOTQdk5FL._RI_.jpg" alt="FiftyShadesFreed">
-                <img src="https://pics.filmaffinity.com/Orgullo_y_prejuicio-629327318-large.jpg" alt="OrgulloYPrejuicio">
-                <img src="https://pics.filmaffinity.com/Lo_imposible-554801449-large.jpg" alt="LoImposible">
-                <img src="https://cinepsicoanalisisycultura.files.wordpress.com/2017/05/88billyelliot.jpg?w=648" alt="BillyElliot" class="mobilehide">
-                <img src="https://i.pinimg.com/474x/5a/ab/34/5aab348dd9253e564688ada0fcccdfdd.jpg" alt="SienteElRitmo" class="mobilehide">
-                <img src="https://vignette.wikia.nocookie.net/doblaje/images/2/2a/Meangirls2.jpg/revision/latest?cb=20200403010621&path-prefix=es" alt="ChicasPesadas2" class="mobilehide">
-                <img src="https://lh3.googleusercontent.com/31WrBGLE5f_G7nEnt0ZCe_jz4wJQdxQRy8Uedkbbp1rgWIjtYwViOP3moiNpZQgaG2rvHw" alt="AnabelleCreation" class="mobilehide">
-            </article>
-        </section>
+        <h2 class="titulos">Populares en iChill</h2> 
+            <div class="PopularesEniChill uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                <ul class="PopularesEniChill uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
 
-        <section>
-                <h2 class="titulos">Tendencias</h2>
-            <article class="Tendencias">
-                <img src="https://es.web.img3.acsta.net/pictures/17/11/02/13/42/4865983.jpg" alt="Wonder">
-                <img src="https://pics.filmaffinity.com/girls_trip-579682097-large.jpg" alt="ViajeDeChicas">
-                <img src="https://i.ytimg.com/vi/vS9XSIyXTJU/movieposter.jpg" alt="Overboard">
-                <img src="https://vignette.wikia.nocookie.net/doblaje/images/7/73/The_Post_Poster_Latino_2_JPosters.jpg/revision/latest?cb=20190824003350&path-prefix=es" alt="ThePost" class="mobilehide">
-                <img src="https://www.revistameta.com.ar/wp-content/uploads/2017/02/Hambre-de-poder-poster.jpg" alt="HambreDePoder" class="mobilehide">
-                <img src="https://vignette.wikia.nocookie.net/doblaje/images/b/bb/Set-it-up-poster.jpg/revision/latest/top-crop/width/360/height/450?cb=20180516002611&path-prefix=es" alt="SetItUp" class="mobilehide">
-                <img src="https://pics.filmaffinity.com/Harry_Potter_y_la_c_mara_secreta-420538488-large.jpg" alt="HarryPotter2" class="mobilehide">
-            </article>
-          </section>
+        <h2 class="titulos">Tendencias</h2> 
+            <div class="Tendencias uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                <ul class="Tendencias uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
 
-        <section>
-                <h2 class="titulos">Nuevos Lanzamientos</h2>
-            <article class="NuevosLanzamientos">
-                <img src="https://pm1.narvii.com/7301/ce1fbe69d1f2ba7d3b9aa2f03bf68a47ff5d797br1-400-600v2_00.jpg" alt="AmorEnObras">
-                <img src="https://i.pinimg.com/736x/69/7c/1d/697c1d2b23916788c54b6756665e1ecb.jpg" alt="LaCitaPerfecta">
-                <img src="https://www.estrenosdecine.eu/media/k2/items/cache/4f4cda3a74dc18344792635f81d90b25_XL.jpg" alt="TheHater">
-                <img src="https://pics.filmaffinity.com/18_regali-782967126-large.jpg" alt="18Regalos" class="mobilehide">
-                <img src="https://cdn-3.expansion.mx/dims4/default/c1c0e6e/2147483647/strip/true/crop/1684x2560+0+0/resize/600x912!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe5%2Fe570bb14e5acb5293d46700ff1de8363%2FBecoming-.jpg" alt="Becoming" class="mobilehide">
-                <img src="https://elcomercio.pe/resizer/bw-SskBjS2FG5XiRfkWBIBZyhPc=/640x0/smart/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/OWCXFCOF4NBEPICSCPD6OCJM2I.jpg" alt="Fractura" class="mobilehide">
-                <img src="https://vignette.wikia.nocookie.net/doblaje/images/5/56/Lets_dance_2019.jpg/revision/latest?cb=20191204180651&path-prefix=es" alt="Bailemos" class="mobilehide">
-            </article>
-        </section>
+        <h2 class="titulos">Nuevos Lanzamientos</h2> 
+            <div class="NuevosLanzamientos uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                <ul class="NuevosLanzamientos uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
 
-        <section>
-                <h2 class="titulos">Favoritos de Siempre</h2>
-            <article class="FavoritosDeSiempre">
-                <img src="https://m.media-amazon.com/images/M/MV5BNzI4MDMwMzUwNF5BMl5BanBnXkFtZTgwMDgyNzkyNzE@._V1_.jpg" alt="HowToBeSingle">
-                <img src="https://www.funeralnatural.net/sites/default/files/pelicula/imagen/sietealmascartel.jpg" alt="SieteAlmas">
-                <img src="https://pics.filmaffinity.com/El_gran_Gatsby-737648170-large.jpg" alt="Gatsby">
-                <img src="https://mx.web.img3.acsta.net/pictures/19/04/13/06/29/0232653.jpg" alt="MilagrosInesperados" class="mobilehide">
-                <img src="https://i.pinimg.com/736x/ec/ec/af/ececaf0bc224ffcab2546de7697e9c71.jpg" alt="Perdida" class="mobilehide">
-                <img src="https://pics.filmaffinity.com/Perfectos_desconocidos-252289686-large.jpg" alt="PerfectosDesconocidos" class="mobilehide">
-                <img src="https://i.pinimg.com/originals/2e/9e/da/2e9eda32240e70e7c4568f6cfa96c3c7.jpg" alt="TrumanShow" class="mobilehide">
-            </article>
-        </section>
-
+        <h2 class="titulos">Favoritos de Siempre</h2> 
+            <div class="FavoritosDeSiempre uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                <ul class="FavoritosDeSiempre uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
     </div>
     
     <footer class="fondo">

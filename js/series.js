@@ -73,14 +73,14 @@ window.addEventListener('load',function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    fetch (`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
             console.log (data);
 
-        var ul = document.querySelector ("ul.SeriesMasRecientes");
+        var ul = document.querySelector ("ul.NuevosLanzamientos");
 
             for (let index = 0; index < data.results.length; index++) {
                 const element = data.results [index];
@@ -107,14 +107,14 @@ window.addEventListener('load',function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
             console.log (data);
 
-        var ul = document.querySelector ("ul.SeriesMasVistas");
+        var ul = document.querySelector ("ul.Documentales");
 
             for (let index = 0; index < data.results.length; index++) {
                 const element = data.results [index];
