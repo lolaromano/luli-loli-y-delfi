@@ -12,16 +12,19 @@ window.addEventListener('load',function(){
     .then(function (data) {
         console.log (data);
 
-       var ul = document.querySelector (".PeliculasMasRecientes");
+       var ul = document.querySelector ("ul.PeliculasMasRecientes");
 
-        for (let index = 0; index < 6; index++) {
+        for (let index = 0; index < data.results.length; index++) {
             const element = data.results [index];
             
             ul.innerHTML += `
-                    <li>
-                        <img src="${linkImagen}${element.poster_path}" alt=""> 
-                        <div class="uk-position-center uk-panel"><h1></h1></div>
-                    </li>
+            <li>
+            <div class="uk-panel"> 
+                    <img src="${linkImagen}${element.poster_path}" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+            </li>
+    
             `;
 
             console.log(linkImagen + element.poster_path);
