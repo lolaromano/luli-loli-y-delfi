@@ -5,14 +5,14 @@ window.addEventListener('load',function(){
 
     console.log (linkImagen);
     
-    fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/tv/airing_today?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
             console.log (data);
 
-        var ul = document.querySelector ("ul.PeliculasMasRecientes");
+        var ul = document.querySelector ("ul.PopularesEniChill");
 
             for (let index = 0; index < data.results.length; index++) {
                 const element = data.results [index];
@@ -37,16 +37,16 @@ window.addEventListener('load',function(){
         })
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    fetch (`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/tv/on_the_air?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
             console.log (data);
 
-        var ul = document.querySelector ("ul.PeliculasMasVistas");
+        var ul = document.querySelector ("ul.Tendencias");
 
             for (let index = 0; index < data.results.length; index++) {
                 const element = data.results [index];

@@ -105,7 +105,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -118,7 +117,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -131,7 +129,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -144,7 +141,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -242,7 +238,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -255,7 +250,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -268,7 +262,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -281,7 +274,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -294,7 +286,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
@@ -625,7 +616,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         margin: 0px;
         padding: 35px;
     }
@@ -639,7 +629,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         margin: 0px;
         padding: 35px;
     }
@@ -653,7 +642,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         margin: 0px;
         padding: 35px;
     }
@@ -667,7 +655,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         margin: 0px;
         padding: 35px;
     }
@@ -1068,7 +1055,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         padding: 10px;
         margin: 0px;
     }
@@ -1082,7 +1068,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         padding: 10px;
         margin: 0px;
     }
@@ -1096,7 +1081,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         padding: 10px;
         margin: 0px;
     }
@@ -1110,7 +1094,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border: solid 3px rgb(227, 184, 255);
         padding: 10px;
         margin: 0px;
     }

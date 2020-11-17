@@ -301,7 +301,6 @@ color: darkgray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 3px rgb(227, 184, 255);
     padding: 20px;
 }
 
