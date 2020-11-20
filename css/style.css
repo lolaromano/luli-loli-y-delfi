@@ -61,8 +61,26 @@ canvas img video {
     font-weight: 700;
 }
 
-li.uk-active {
+.PeliculasMasRecientes li {
     width: auto;
+}
+
+.PeliculasMasVistas li {
+    width: auto;
+}
+
+.SeriesMasRecientes li {
+    width: auto;
+}
+
+.SeriesMasVistas li {
+    width: auto;
+}
+
+@media (min-width: 960px){
+    .uk-child-width-1-2\@m>* {
+        width: auto;
+    }
 }
 
 .fondo{
