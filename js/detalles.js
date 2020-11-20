@@ -13,7 +13,25 @@ window.onload = function (){
 
     var tipo = queryStringObj.get("tipo");
 
-//DETALLES PELICULAS
+    console.log(tipo);
+
+    if (tipo= "serie") {
+        contenidoSeries (id);
+
+    } else if {
+        contenidoPeliculas (id);
+
+    } else {
+        contenidoGeneros (id);
+    }
+    
+
+    function contenidoSeries (id) {
+        document.querySelector('.peliculas').style.display = "none";
+        document.querySelector('.generos').style.display = "none";
+    }
+
+//DETALLES SERIES
     fetch(`https://api.themoviedb.org/3/movie/{movie_id}?api_key=${apiKey}&language=en-US`) 
         .then(function(response){
             return response.json();
@@ -21,42 +39,43 @@ window.onload = function (){
 
         .then(function(data){
             console.log(data);
-                if (tipo == "movies") {
-                    armarContenidoMovies (id);
-                
-                    var miDiv = document.querySelector(".movies")
-                    miDiv.innerHTML += `
+            
+            var Series = document.querySelector(".Series")
+            
+            Series.innerHTML += `
+                <article class="uk-comment">
+                <header class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
                             <img class="uk-comment-avatar" src="${linkImagen}" width="80" height="80" alt="">
                         </div>
-
                         <div class="uk-width-expand">
+                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${Series.title}</a></h4>
                             <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                <li><a href="#">${element.release_date}</a></li>
-                                <li><a href="#">${element.adult}</a></li>
-                                <li><a href="#">${element.popularity}</a></li>
+                                <li><a href="#">12 days ago</a></li>
+                                <li><a href="#">Reply</a></li>
                             </ul>
                         </div>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+                </article>
+            `
 
-                        <div class="uk-comment-body">
-                            <p>${element.overview}</p>
-                        </div>
-                        <ul class="uk-list uk-list-divider">
-                            <li>${element.tagline}</li>
-                            <li>${element.genres.id}${element.genres.name}</li>
-                        </ul>
-                    `
-
-                }else{
-                    armarContenidoTv (id);
-                }
         })
 
         .catch(function (error){
             console.log('El error fue: '+error);
         })
 
-//DETALLES SERIES
+    function contenidoPeliculas (id) {
+        document.querySelector('.series').style.display = "none";
+        document.querySelector('.generos').style.display = "none";
+    }
+    
+//DETALLES PELICULAS
     fetch(`https://api.themoviedb.org/3/tv/{tv_id}?api_key=${apiKey}&language=en-US`) 
     //language=en-US&page=1&include_adult=false
 
@@ -66,15 +85,7 @@ window.onload = function (){
 
         .then(function(data){
             console.log(data);
-            if (tipo == "tv") {
-                armarContenidoMovies (id);
-
-                var miDiv = document.querySelector(".tv")
-                miDiv.innerHTML += `${element.title}`
-            
-            }else{
-                armarContenidoTv (id);
-            }
+          
         })
 
         .catch(function (error){
@@ -85,17 +96,16 @@ window.onload = function (){
     
 
 
-
-
-
-
-
+    function contenidoGeneros (id) {
+        document.querySelector('.series').style.display = "none";
+        document.querySelector('.peliculas').style.display = "none";
+    }
 
 
 } //fin
 
 
-function armarContenidoTv(id) {
+//function armarContenidoTv(id) {
 
 
 //estamos en una serie
@@ -105,9 +115,9 @@ function armarContenidoTv(id) {
 //https://api.themoviedb.org/3/tv/{tv_id}?api_key=<<api_key>>&language=en-US
 
     
-}
+//}
 
-function armarContenidoMovies(id) {
+//function armarContenidoMovies(id) {
     
 //estamos en peliculas
 //oculto el div de tv- muestro div de movies
@@ -115,4 +125,4 @@ function armarContenidoMovies(id) {
 //fetch al detalle de movie
 //https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
 
-}
+//}

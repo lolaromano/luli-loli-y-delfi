@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iChill</title>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/generos.js"></script>
+<!-- UIKIT -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+<!-- CSS NOSOTRAS -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3286a7b3ee.js" crossorigin="anonymous"></script>
 </head>
@@ -21,22 +24,22 @@
             <div class="uk-width-1-1">
                 <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
                         <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
-                        <li><a href="p1-inicio.html">Inicio</a></li>
-                        <li><a href="p2-generos.html">Géneros</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Acción</a></li>
-                                    <li class="uk-active"><a href="#">Ciencia ficción y fantasía</a></li>
-                                    <li class="uk-active"><a href="#">Dramas</a></li>
-                                    <li class="uk-active"><a href="#">Misterios</a></li>
-                                    <li class="uk-active"><a href="#">Policiales</a></li>
-                                    <li class="uk-active"><a href="#">Romance</a></li>
-                                    <li class="uk-active"><a href="#">Terror</a></li>
-                                </ul>
-                            </div>
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <!--<li><a href="generos.html">Géneros</a>-->
+                        <li><a href="generos.html">Géneros<span uk-icon="icon:  triangle-down"></span></a>
+                                <div uk-dropdown="mode: click;">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="peliculas.html">Acción</a></li>
+                                        <li><a href="peliculas.html">Ciencia ficción y fantasía</a></li>
+                                        <li><a href="peliculas.html">Comedia</a></li>
+                                        <li><a href="peliculas.html">Romance</a></li>
+                                        <li><a href="peliculas.html">Suspenso</a></li>
+                                        <li><a href="ayuda.html">Terror</a></li>
+                                    </ul>
+                                </div>
                         </li>
-                        <li><a href="p3-series.html">Series</a></li>
-                        <li><a href="p4-peliculas.html">Películas</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="peliculas.html">Películas</a></li>
                         <form class="uk-search uk-search-default">
                             <span uk-search-icon></span>
                             <input class="uk-search-input" type="search" placeholder="Buscador...">
@@ -46,90 +49,290 @@
         </nav>
 
     </header>
-    
-    <div>
-            <br>
-                <h2 class="GenerosAccion1"> Géneros/Acción</h2>
-        <section>    
-                <h2 class="titulos">Películas de Acción</h2>  
-            <article class="PeliculasDeAccion">
-                    <img src="https://es.web.img3.acsta.net/pictures/14/10/27/12/51/279029.jpg" alt="Francotirador">
-                    <img src="https://pics.filmaffinity.com/Proyecto_Power-232352967-large.jpg" alt="Proyecto Power">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81F5PF9oHhL._AC_SL1500_.jpg" alt="John Wick">
-                    <img src="https://pics.filmaffinity.com/Escuadr_n_6-411208949-large.jpg" alt="Escuadron6" class="mobilehide">
-                    <img src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/640466.jpg" alt="Spider Man" class="mobilehide"> 
-                    <img src="https://i1.wp.com/cinedesuperheroes.files.wordpress.com/2016/06/suicide-squad-warner-bros-dc-comics-posters-01.jpg" alt="Suicide Squad" class="mobilehide">
-                    <img src="https://pics.filmaffinity.com/Fast_Furious_Hobbs_Shaw-116981753-large.jpg" alt="Rapidos y Furiosos" class="mobilehide">
-            </article>
-        </section>
-    </div>
-    
-        <section>
-            <h2 class="titulos">Series de Acción</h4>
-                <article class="SeriesDeAccion">
-                    <img src="https://a.wattpad.com/cover/109092218-352-k608213.jpg" alt="The100">
-                    <img src="https://www.formulatv.com/images/series/posters/700/748/1_m1.jpg" alt="Vikings">
-                    <img src="https://i.pinimg.com/474x/fd/a3/ec/fda3ec8adc16d2d2623b75cb8e7b6f75.jpg" alt="Sobreviviendo a Escobar">
-                    <img src="https://i.pinimg.com/originals/6e/70/90/6e70904333621d31e2cf3a5da5255ad6.jpg" alt="Narcos" class="mobilehide">
-                    <img src="https://es.web.img2.acsta.net/pictures/16/10/25/16/27/584973.jpg" alt="Shooter" class="mobilehide">
-                    <img src="https://i.pinimg.com/564x/28/5c/f2/285cf2c3116e2e80853b9fcbf472c972.jpg" alt="Arrow" class="mobilehide">
-                    <img src="https://heroismoagonizante101.files.wordpress.com/2018/12/fauda-principal.jpg?w=584" alt="Fauda" class="mobilehide">
-                </article>
-        </section>
-    
-
-        <div>
-            <br>
-            <h2 class="GenerosAccion2"> Géneros/Romance</h2>
-    <section>    
-            <h2 class="titulos">Películas Románticas</h2>  
-        <article class="PeliculasDeAccion">
-                <img src="https://pics.filmaffinity.com/Mujercitas-778503384-large.jpg" alt="Little Women">
-                <img src="https://pics.filmaffinity.com/El_diario_de_Noa-565006977-large.jpg" alt="The Notebook">
-                <img src="https://i.pinimg.com/originals/0e/0f/43/0e0f43daf2ce8ec859c98f1b014ebb31.jpg" alt="Five Feet Apart">
-                <img src="https://www.revistameta.com.ar/wp-content/uploads/2017/01/1-1.jpg" alt="La La Land" class="mobilehide">
-                <img src="https://vlagc.files.wordpress.com/2018/03/4681060_640px-e1521048043801.jpg?w=640" alt="Up" class="mobilehide"> 
-                <img src="https://images-na.ssl-images-amazon.com/images/I/717pgLFH9hL.jpg" alt="Dear John" class="mobilehide">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/91I3vap2bGL._SL1500_.jpg" alt="Letters to Juliet" class="mobilehide">
-        </article>
-    </section>
-</div>
-
-    <section>
-        <h2 class="titulos">Series Románticas</h4>
-            <article class="SeriesDeAccion">
-                <img src="https://pics.filmaffinity.com/Gran_Hotel_Serie_de_TV-432106970-large.jpg" alt="Gran Hotel">
-                <img src="https://es.web.img3.acsta.net/pictures/14/05/09/11/16/481757.jpg" alt="Outlander">
-                <img src="https://pics.filmaffinity.com/Velvet_Serie_de_TV-969855128-large.jpg" alt="Velvet">
-                <img src="https://pics.filmaffinity.com/Las_chicas_del_cable_Serie_de_TV-934345497-large.jpg" alt="Las Chicas del Cable" class="mobilehide">
-                <img src="https://pics.filmaffinity.com/baby_tv_series-143623198-large.jpg" alt="Baby" class="mobilehide">
-                <img src="https://i1.wp.com/i.dailymail.co.uk/1s/2020/04/21/18/27471750-0-image-a-52_1587488921937.jpg?resize=306%2C450&ssl=1" alt="Too Hot to Handle" class="mobilehide">
-                <img src="https://es.web.img3.acsta.net/pictures/18/11/13/11/24/1406284.jpg" alt="Jane the Virgin" class="mobilehide">
-            </article>
-    </section>
 
 
-    <footer class="fondo">
+    <h2 class="Acción">Géneros/Acción</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
 
-        <nav class="footer">
-            <ul>
-                <li><a href="contactanos.html"> Contactanos</a></li>
-                <li><a href="terminosycondiciones.html"> Términos y Condiciones</a></li>
-                <li><a href="ayuda.html"> Ayuda</a> </li>
-            </ul>          
-        </nav>
-    
-        <div class="redes">
-            <ul>
-                <li><a href="https://www.instagram.com" class="instagram"> <img src="https://i.pinimg.com/originals/5c/42/3c/5c423c3fd90167f0602d3369ddbc0621.png" alt="">  </a></li>
-                <li><a href="https://twitter.com" class="twitter"> <img src="https://www.vientosdeviaje.com/wp-content/uploads/2016/01/twitter-gris.png" alt="">  </a></li>
-                <li><a href="https://www.facebook.com" class="facebook"> <img src="https://i.pinimg.com/originals/04/a9/53/04a953e8b417481fa37773e29f698a36.png" alt=""> </a></li>
             </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
         </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+        <h2 class="CienciaFiccion">Géneros/Ciencia ficción y fantasía</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+        <h2 class="Comedia">Géneros/Comedia</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+
+        <h2 class="Drama">Géneros/Drama</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+
+        <h2 class="Romance">Géneros/Romance</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+        <h2 class="Suspenso">Géneros/Suspenso</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+
+        <h2 class="Suspenso">Géneros/Suspenso</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+
+
+
+
+
+
+
+        <h2 class="Terror">Géneros/Terror</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <h2 class="Acción">Géneros/Acción</h2>
+        <div class="Peliculas uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Peliculas uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <div class="Series uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        
+            <ul class="Series uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+        <footer class="fondo">
+        
+            <hr class="uk-divider-icon">
     
+            <nav class="footer">
+                <ul>
+                    <li><a href="contactanos.html">CONTACTANOS</a></li>
+                    <li><a href="terminosycondiciones.html">TERMINOS Y CONDICIONES</a></li>
+                    <li><a href="ayuda.html">AYUDA</a> </li>
+                </ul>          
+            </nav>
+    
+            <div class="redes">
+                <a href="https://www.facebook.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
+    
+                <a href="https://twitter.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
+                
+                <a href="https://www.youtube.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
+                
+                <a href="https://www.instagram.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a> 
+            </div>
+    
+    
+            <div class="tmdb">
+                <li>
+                    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="TMDBLogo">
+                </li>
+            </div>
             <h6 class="nombres"> Delfina Cardona, Lola Romano & Luisa Nazar</h6>
     
-    </footer>
+        </footer>
     
 </body>
 
