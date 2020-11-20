@@ -57,7 +57,7 @@ window.onload = function (){
         })
 
 //DETALLES SERIES
-    fetch(`//https://api.themoviedb.org/3/tv/{tv_id}?api_key=${apiKey}&language=en-US`) 
+    fetch(`https://api.themoviedb.org/3/tv/{tv_id}?api_key=${apiKey}&language=en-US`) 
     //language=en-US&page=1&include_adult=false
 
         .then(function(response){

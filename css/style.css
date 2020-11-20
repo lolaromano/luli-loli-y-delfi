@@ -37,10 +37,16 @@ a:hover{
 
 }
 
-.banner img{
-    width: 800px;
-    height: 400px;
+.uk-width-4-5 {
+    width: 100%;
 }
+
+canvas img video {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+ }
+
 
 .titulos {
     display: flex;
@@ -54,6 +60,14 @@ a:hover{
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
+}
+
+li.PeliculasMasVistas{
+    width: auto;
+}
+
+li.uk-active {
+    width: auto;
 }
 
 .fondo{
