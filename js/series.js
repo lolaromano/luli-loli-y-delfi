@@ -20,7 +20,7 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen}${element.poster_path}" alt="">
+                        <img src="${linkImagen} ${element.poster_path}" alt="">
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
