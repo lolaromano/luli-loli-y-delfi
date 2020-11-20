@@ -47,7 +47,6 @@ canvas img video {
     box-sizing: border-box;
  }
 
-
 .titulos {
     display: flex;
     font-style: bold;
@@ -60,10 +59,6 @@ canvas img video {
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
-}
-
-li.PeliculasMasVistas{
-    width: auto;
 }
 
 li.uk-active {
