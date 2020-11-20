@@ -77,6 +77,27 @@ canvas img video {
     width: auto;
 }
 
+.PopularesEniChill li {
+    width: auto;
+}
+
+.Tendencias li {
+    width: auto;
+}
+
+.NuevosLanzamientos li {
+    width: auto;
+}
+
+.Documentales li {
+    width: auto;
+}
+
+.FavoritosDeSiempre li {
+    width: auto;
+}
+
+
 @media (min-width: 960px){
     .uk-child-width-1-2\@m>* {
         width: auto;

@@ -5,7 +5,7 @@ window.addEventListener('load',function(){
 
     console.log (linkImagen);
     
-    fetch (`https://api.themoviedb.org/3/tv/airing_today?api_key=${apiKey}&language=en-US&page=1`)
+        fetch (`https://api.themoviedb.org/3/tv/airing_today?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
@@ -20,7 +20,7 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen} ${element.poster_path}" alt="">
+                        <img src="${linkImagen}${element.poster_path}" alt="">
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
