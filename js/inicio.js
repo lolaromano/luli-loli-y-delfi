@@ -3,7 +3,34 @@ window.addEventListener('load',function(){
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c'
     var linkImagen = "https://image.tmdb.org/t/p/w500"
 
-    
+    fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key${apiKey}&language=en-US`)
+        .then(function (response) {
+            return response.json()
+        })
+        .then (function (data) {
+            console.log(data);
+            var generos = document.querySelector(".generos");
+
+            for (let index = 0; index < data.length; index++) {
+                const element = data[index];
+                
+                generos.innerHTML +=
+                `<ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">${element.name}</a></li>
+                </ul>`
+            }
+        })
+        .catch(function (error){
+        console.log('El error fue: '+error);
+    })
+
+    `<ul class="uk-nav uk-navbar-dropdown-nav">
+        <li class="uk-active"><a href="#">${element.name}</a></li>
+    </ul>`
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
     fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()

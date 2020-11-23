@@ -5,6 +5,8 @@ window.onload = function (){
 //for
 //ul.innerHTML += " li a href ="detalles.html?tipo=tv-movie&id""
 
+var apiKey = `1dd189fc2111fcf3d905a59b0cd42a3c`;
+
 fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
 .then(function (response) {
     return response.json()
