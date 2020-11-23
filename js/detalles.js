@@ -73,14 +73,14 @@ window.addEventListener("load", function(){
 
 //DETALLES SERIES
 
-var queryString = location.search;
-var queryStringObj = new URLSearchParams(queryString);
-var serieElegida = queryStringObj.get("idSerie");
- 
-var series = document.querySelector("#series");
-series.innerHTML = "el show elegido es " + serieElegida
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+    var serieElegida = queryStringObj.get("idSerie");
+    
+    var series = document.querySelector("#series");
+    series.innerHTML = "el show elegido es " + serieElegida
 
-console.log(queryString);
+    console.log(queryString);
 
 
 

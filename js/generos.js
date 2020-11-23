@@ -1,40 +1,24 @@
 window.addEventListener('load',function(){
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c'
+    var linkImagen = "https://image.tmdb.org/t/p/w500"
+
         
-    fetch (`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`)
+    fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
     .then(function (response) {
         return response.json()
     })
-    .then(function (Genero) {
-        console.log (Genero);
- 
-        var Accion = document.querySelector (".accion")
+    .then(function (data) {
+        console.log (data);
+      
+      for (let index = 0; index < data.genres.length; index++) {
+        const element = data.genres[index];
+       
+        var menugenerospeliculas = document.querySelector ("#menugeneros");
 
-          switch (element.id) {
-            case 'Accion': 
-              if (Accion == true) {
-                `<li>
-                  <div class="uk-panel"> 
-                    <img src="${linkImagen}${element.poster_path}" alt="">
-                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                  </div>
-                </li>
-              `
-              } 
-              break;
-          
-            default:
-              break;
-          }
-              
-        
-        `<li>
-            <div class="uk-panel"> 
-                <img src="${linkImagen}${element.poster_path}" alt="">
-                <div class="uk-position-center uk-panel"><h1></h1></div>
-            </div>
-        </li>
-        `
+         menugeneros.innerHTML +=
+          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+          console.log (element)
+      };
 
                 
     })
@@ -42,7 +26,31 @@ window.addEventListener('load',function(){
         console.log('El error fue: '+error);
     })
 
-    
+
+/////////////////////////////////////////////////////////////////////////////
+
+    fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log (data);
+      
+      for (let index = 0; index < data.genres.length; index++) {
+        const element = data.genres[index];
+       
+        var menugenerosseries = document.querySelector ("#menugeneros");
+
+         menugeneros.innerHTML +=
+          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+  
+      };
+
+                
+    })
+    .catch(function (error){
+        console.log('El error fue: '+error);
+    })
     
     
 })
