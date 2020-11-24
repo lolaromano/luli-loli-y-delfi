@@ -122,6 +122,71 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 }
 
 
+
+.tituloGeneros {
+    display: flex;
+    color: white;
+    font-style: bold;    
+    line-height: 1.25vw;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 38px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.accion li {
+    width: 350px;
+}
+
+.comedia li {
+    width: 350px;
+}
+
+.drama li {
+    width: 350px;
+}
+
+.misterio li {
+    width: 350px;
+}
+
+.romance li {
+    width: 350px;
+    margin-bottom: 30px;
+
+}
+
+.terminos1 {
+    text-align: justify;
+    font-size: 30px;
+    line-height: 8px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+
+}
+
+.pregunta {
+color: rgba(255, 255, 255, 0.63);
+}
+
+.respuesta {
+color: white;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
 @media (min-width: 960px){
     .uk-child-width-1-2\@m>* {
         width: auto;
@@ -159,7 +224,7 @@ a:hover{
 }
 
 .fa{
-color: darkgray;
+    color: darkgray;
 }
 
 .fa:hover{
@@ -588,6 +653,10 @@ color: darkgray;
         font-family: montserrat;
         color: rgb(41, 39, 39);
         padding: 10PX;
+        display: table-cell;
+    vertical-align: bottom;
+    line-height: 1.25vw;
+    font-size: 1.4vw;
     }
 
     .fondo{
@@ -978,13 +1047,10 @@ color: darkgray;
     }
 
     .titulos {
-        display: flex;
-        font-size: 15px;
-        font-style: normal;
-        background-color: rgb(227, 184, 255);
-        font-family: montserrat;
-        color: rgb(41, 39, 39);
-        padding: 6px;
+        display: table-cell;
+        vertical-align: bottom;
+        line-height: 1.25vw;
+        font-size: 1.4vw;
     }
     
     .fondo{

@@ -88,7 +88,7 @@ var id = queryStringObj.get("id");
                                     </a>
                                     <div class="uk-position-center uk-panel"><h1></h1></div>
                                     <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                                        <div class="uk-width-expand">                            
+                                        <div class="inicio uk-width-expand">                            
                                             <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
                                                 <li><a href="#">${element.release_date}</a></li>                                                             
                                                 <li><a href="#">${element.original_language}</a></li>                            
@@ -99,7 +99,7 @@ var id = queryStringObj.get("id");
                         </div>
                     </li>
                 `;
-
+            
                 console.log(linkImagen + element.poster_path);
 
             }

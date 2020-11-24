@@ -29,18 +29,18 @@ window.addEventListener('load',function() {
            
             if (element.media_type == "movies") {
                 ul.innerHTML +=
-                `<li>
-                    <form class="buscador uk-search uk-search-default" action="buscador.html" method="get">
+                `<form class="buscador uk-search uk-search-default" action="buscador.html" method="get">
                         <a href='detalles.html?tipo=pelicula&id=${element.id}">
                         <img src="${linkImagen} ${element.poster_path}" alt="">
-                    </form>
-                </li>` 
+                </form>
+                ` 
             } if (element.media_type == "tv") {
                 ul.innerHTML +=
-                `<li>
+                `<form class="buscador uk-search uk-search-default" action="buscador.html" method="get">
                         <a href='detalles.html?tipo=serie&id=${element.id}">
                         <img src="${linkImagen} ${element.poster_path}" alt="">
-                </li>` 
+                </form>
+                `
             }
         }
 
