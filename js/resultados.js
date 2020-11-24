@@ -6,31 +6,44 @@ window.addEventListener('load',function() {
 
     this.location.search;
     var queryString = location.search;
-    var queryStringObj = new URLSearchParams(queryString);
+    var queryString = new URLSearchParams(queryString);
 
-    var buscador = queryStringObj.get("buscador");
+    var buscador = document.querySelector (".buscador")
+    var buscando = queryString.get('buscador');
+    
 
 
-    fetch (`https://api.themoviedb.org/3/find/${buscador}?api_key=${apiKey}&language=en-US&external_source=imdb_id`)
+    fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
     .then(function (response) {
         return response.json()
     })
 
-    .then(function (results) {
-        console.log (results);
+    .then(function (data) {
+        console.log (data);
       
-        var listado = document.querySelector(".listado");
-        var resultadoBusqueda = results.data;
+        var ul = document.querySelector(".listaPeliculas");
+        var resultadoBusqueda = data.results;
 
-        resultadoBusqueda.forEach(function(results) {
-            listado.innerHTML +=
-            `<li>
-                <form class="buscador uk-search uk-search-default" action="buscador.html" method="get">
-                    <a href='resultados.html?buscador="${results.id}">
-                    <img src="${linkImagen} ${results.poster_path}" alt="">
-                </form>
-             </li>` 
-        })
+        for (let index = 0; index < data.results.length; index++) {
+            const element = data.results[index];
+           
+            if (element.media_type == "movies") {
+                ul.innerHTML +=
+                `<li>
+                    <form class="buscador uk-search uk-search-default" action="buscador.html" method="get">
+                        <a href='detalles.html?tipo=pelicula&id=${element.id}">
+                        <img src="${linkImagen} ${element.poster_path}" alt="">
+                    </form>
+                </li>` 
+            } if (element.media_type == "tv") {
+                ul.innerHTML +=
+                `<li>
+                        <a href='detalles.html?tipo=serie&id=${element.id}">
+                        <img src="${linkImagen} ${element.poster_path}" alt="">
+                </li>` 
+            }
+        }
+
     })
 
     .catch(function (error){
