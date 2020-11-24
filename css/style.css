@@ -47,6 +47,30 @@ canvas img video {
     box-sizing: border-box;
  }
 
+.uk-nav {
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    padding-bottom: 0px;
+    margin: 15px 0px;
+    width: 100%;
+    padding-top: 0px;
+    list-style-type: none;   
+}
+
+.uk-nav li {
+    display: inline;
+    padding-left: 2px;
+    float: left;
+    padding-bottom: 2px;
+    width: 30%;
+    padding-top: 2px;
+}
+
+ul#menugeneros.uk-nav.uk-dropdown-nav {
+    width: 700px;
+}
+
 .titulos {
     display: flex;
     font-style: bold;

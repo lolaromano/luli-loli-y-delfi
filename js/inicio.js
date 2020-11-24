@@ -3,6 +3,8 @@ window.addEventListener('load',function(){
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c'
     var linkImagen = "https://image.tmdb.org/t/p/w500"
 
+
+
     fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
     .then(function (response) {
         return response.json()
@@ -27,9 +29,10 @@ window.addEventListener('load',function(){
     })
 
 
-/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
+
+fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
     .then(function (response) {
         return response.json()
     })
@@ -39,11 +42,11 @@ window.addEventListener('load',function(){
       for (let index = 0; index < data.genres.length; index++) {
         const element = data.genres[index];
        
-        var menugenerosseries = document.querySelector ("#menugeneros");
+        var menugenerospeliculas = document.querySelector ("#menugeneros");
 
          menugeneros.innerHTML +=
           `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
-  
+          console.log (element)
       };
 
                 
@@ -51,7 +54,9 @@ window.addEventListener('load',function(){
     .catch(function (error){
         console.log('El error fue: '+error);
     })
-    
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
     
 
 

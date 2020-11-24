@@ -27,19 +27,12 @@
                 <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
                         <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
                         <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="generos.html">Géneros</a>
-                            <div class="uk-navbar-dropdown" >
-                               
-                                <ul class="uk-nav uk-navbar-dropdown-nav" id="menugeneros">
-                                    <!--<li><a href="generos.html">Acción</a></li>
-                                        <li><a href="generos.html">Ciencia ficción y fantasía</a></li>
-                                        <li><a href="generos.html">Comedia</a></li>
-                                        <li><a href="generos.html">Romance</a></li>
-                                        <li><a href="generos.html">Suspenso</a></li>
-                                        <li><a href="generos.html">Terror</a></li>-->
-                                </ul>
+                        <li><a href="generos.html">Géneros<span uk-icon="icon:  triangle-down"></span></a>
+                                <div uk-dropdown="mode: click;">
+                                    <ul class="uk-nav uk-dropdown-nav" id="menugeneros">
                                 
-                            </div>
+                                    </ul>
+                                </div>
                         </li>
                         <li><a href="series.html">Series</a></li>
                         <li><a href="peliculas.html">Películas</a></li>
@@ -47,12 +40,6 @@
                             <span uk-search-icon></span>
                             <input class="uk-search-input" type="search" placeholder="Buscador...">
                         </form>
-                        <!--<li><div class="box">
-                            <div class="container-3">
-                                <span class="icon"><i class="fa fa-search"></i></span>
-                                <input type="search" id="search" placeholder="Search..." />
-                            </div>
-                        </div></li> -->
                 </ul>
             </div>
         </nav>
