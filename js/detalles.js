@@ -3,7 +3,143 @@ window.addEventListener("load", function(){
     var apiKey = `1dd189fc2111fcf3d905a59b0cd42a3c`
     var linkImagen = `https://image.tmdb.org/t/p/w500`
 
-    //con querystring obtengo el tipo y el id que recibi por parametro
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log (data);
+      
+      for (let index = 0; index < data.genres.length; index++) {
+        const element = data.genres[index];
+       
+        var menugenerospeliculas = document.querySelector ("#menugeneros");
+
+         menugeneros.innerHTML +=
+          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+          console.log (element)
+      };
+
+                
+    })
+    .catch(function (error){
+        console.log('El error fue: '+error);
+    })
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log (data);
+      
+      for (let index = 0; index < data.genres.length; index++) {
+        const element = data.genres[index];
+       
+        var menugenerospeliculas = document.querySelector ("#menugeneros");
+
+         menugeneros.innerHTML +=
+          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+          console.log (element)
+      };
+
+                
+    })
+    .catch(function (error){
+        console.log('El error fue: '+error);
+    })
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+
+    var id = queryStringObj.get("id");
+
+
+
+    fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log (data);
+      
+      for (let index = 0; index < data.genres.length; index++) {
+        const element = data.genres[index];
+       
+        var series = document.querySelector("#series")
+        series.innerHTML += `
+            <article class="uk-comment">
+            <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-comment-avatar" src="${linkImagen}${element.poster_path}" width="80" height="80" alt="">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${element.name}</a></h4>
+                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                            <li><a href="#">${element.release_date}</a></li>
+                            <li><a href="#">${element.runtime}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="uk-comment-body">
+                <p>${element.overview}</p>
+            </div>
+        </article>
+    </div>
+        `
+      };
+
+                
+    })
+    .catch(function (error){
+        console.log('El error fue: '+error);
+    })
+
+
+
+}) //fin
+
+
+//function armarContenidoTv(id) {
+
+
+//estamos en una serie
+//oculto el div de movies- muestro div de tv
+
+//fetch al detalle de tv
+//https://api.themoviedb.org/3/tv/{tv_id}?api_key=<<api_key>>&language=en-US
+
+    
+//}
+
+//function armarContenidoMovies(id) {
+    
+//estamos en peliculas
+//oculto el div de tv- muestro div de movies
+
+//fetch al detalle de movie
+//https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
+
+//}
+
+////////////////////////////////
+
+
+
+
+/*
+//con querystring obtengo el tipo y el id que recibi por parametro
 
     var queryString = location.search;
     var queryStringObj = new URLSearchParams(queryString);
@@ -131,30 +267,4 @@ window.addEventListener("load", function(){
         document.querySelector('.series').style.display = "none";
         document.querySelector('.peliculas').style.display = "none";
     }
-
-
-}) //fin
-
-
-//function armarContenidoTv(id) {
-
-
-//estamos en una serie
-//oculto el div de movies- muestro div de tv
-
-//fetch al detalle de tv
-//https://api.themoviedb.org/3/tv/{tv_id}?api_key=<<api_key>>&language=en-US
-
-    
-//}
-
-//function armarContenidoMovies(id) {
-    
-//estamos en peliculas
-//oculto el div de tv- muestro div de movies
-
-//fetch al detalle de movie
-//https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
-
-//}
-
+ */

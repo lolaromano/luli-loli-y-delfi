@@ -66,12 +66,19 @@ fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+var queryString = location.search;
+var queryStringObj = new URLSearchParams(queryString);
+
+var id = queryStringObj.get("id");
+
+
     fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
             console.log (data);
+
 
         var ul = document.querySelector ("ul.PeliculasMasRecientes");
 
@@ -82,8 +89,10 @@ fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en
                     <li>
                         <div class="uk-child-width-1-2@m" uk-grid>
                             <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
+                                <div class="uk-panel">
+                                    <a href="detalles.html?id=${element.id}">
+                                        <img src="${linkImagen}${element.poster_path}" alt="">
+                                    </a>
                                     <div class="uk-position-center uk-panel"><h1></h1></div>
                                     <div class="uk-overlay uk-overlay-primary uk-position-bottom">
                                         <div class="uk-width-expand">                            
