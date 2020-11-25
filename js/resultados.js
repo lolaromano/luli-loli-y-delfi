@@ -22,15 +22,20 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
     })
     
     .then(function (data) {
-        console.log (data);
+       
+        if (data.results.length === 0){
+           alert ("No hay resultados de tu busqueda")
+        }    
+
       
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
             buscadorPelis.innerHTML +=
             `<li>
                 <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a>
-                </li>
-            <img src="${linkImagen}${element.poster_path}" alt="">`
+                <img src="${linkImagen}${element.poster_path}" alt="">
+            </li>
+            `
         }
     })
 
@@ -52,8 +57,11 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
             buscadorSeries.innerHTML +=
-            `<li> <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a></li>
-            <img src="${linkImagen}${element.poster_path}" alt="">`
+            `<li> 
+                <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a>
+                <img src="${linkImagen}${element.poster_path}" alt="">
+            </li>
+            `
         }
     })
 

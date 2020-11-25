@@ -5,81 +5,169 @@ window.addEventListener("load", function() {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
-    .then(function (response) {
-        return response.json()
-    })
-    .then(function (data) {
-        console.log (data);
-      
-      for (let index = 0; index < data.genres.length; index++) {
-        const element = data.genres[index];
-       
-        var menugenerospeliculas = document.querySelector ("#menugeneros");
+    fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            console.log (data);
+        
+        for (let index = 0; index < data.genres.length; index++) {
+            const element = data.genres[index];
+        
+            var menugenerospeliculas = document.querySelector ("#menugeneros");
 
-         menugeneros.innerHTML +=
-          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
-          console.log (element)
-      };
+            menugeneros.innerHTML +=
+            `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+            console.log (element)
+        };
 
-                
-    })
-    .catch(function (error){
-        console.log('El error fue: '+error);
-    })
+                    
+        })
+        .catch(function (error){
+            console.log('El error fue: '+error);
+        })
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
-    .then(function (response) {
-        return response.json()
-    })
+    fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
+        .then(function (response) {
+            return response.json()
+        })
 
-    .then(function (data) {
-        console.log (data);
-      
-      for (let index = 0; index < data.genres.length; index++) {
-        const element = data.genres[index];
-       
-        var menugenerospeliculas = document.querySelector ("#menugeneros");
+        .then(function (data) {
+            console.log (data);
+        
+        for (let index = 0; index < data.genres.length; index++) {
+            const element = data.genres[index];
+        
+            var menugenerospeliculas = document.querySelector ("#menugeneros");
 
-         menugeneros.innerHTML +=
-          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
-          console.log (element)
-      };
+            menugeneros.innerHTML +=
+            `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+            console.log (element)
+        };
 
-    })
+        })
 
-    .catch(function (error){
-        console.log('El error fue: '+error);
-    })
+        .catch(function (error){
+            console.log('El error fue: '+error);
+        })
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    var detalles = document.querySelector('#DETALLES')
-    var reviews = document.querySelector('#REVIEWS')
+    var detalles = document.querySelector(`#DETALLES`)
+    var reviews = document.querySelector(`#REVIEWS`)
     
     var queryString = location.search
     var queryStringObj = new URLSearchParams(queryString)
-    var id = queryStringObj.get("id")
+    var id = queryStringObj.get(`id`)
 
-    var article = document.querySelector('.article')
-    var stringTipo = queryStringObj.get('tipo')
-
-
+    var article = document.querySelector(`.article`)
+    var stringTipo = queryStringObj.get(`tipo`)
 
 
 
 
-if (stringTipo == "pelicula") {
 
-    article.innerHTML = ''
 
-        fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`)
+    if (stringTipo == "pelicula") {
+
+        article.innerHTML += ''
+
+            fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`)
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (data) {
+                    console.log (data);
+                
+                    for (let index = 0; index < data.results.length; index++) {
+                        const element = data.results[index];
+                        
+                        detalles.innerHTML += `
+                            <div>
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="${linkImagen}${element.poster_path}" width="80" height="80" alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${element.name}</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">${element.release_date}</a></li>
+                                                    <li><a href="#">${element.runtime}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>${element.overview}</p>
+                                    </div>
+                                </article>
+                            </div>
+                        `
+                    }
+                })
+                .catch(function (error){
+                    console.log('El error fue: '+error);
+                })
+
+
+
+
+            fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US`)
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (data) {
+                    console.log (data);
+                
+                    for (let index = 0; index < data.results.length; index++) {
+                        const element = data.results[index];
+                        
+                        reviews.innerHTML += `
+                            <div>
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-comment-avatar" src="${linkImagen}${element.poster_path}" width="80" height="80" alt="">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${element.name}</a></h4>
+                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                    <li><a href="#">${element.release_date}</a></li>
+                                                    <li><a href="#">${element.runtime}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>${element.overview}</p>
+                                    </div>
+                                </article>
+                            </div>
+                        `
+                    }
+                })
+
+                .catch(function (error){
+                    console.log('El error fue: '+error);
+                })
+
+    }
+
+    else if (stringTipo == "serie") {
+
+        article.innerHTML += ''
+
+            fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=en-US`)
             .then(function (response) {
                 return response.json()
             })
@@ -88,7 +176,6 @@ if (stringTipo == "pelicula") {
             
                 for (let index = 0; index < data.results.length; index++) {
                     const element = data.results[index];
-                    
                     detalles.innerHTML += `
                         <div>
                             <article class="uk-comment">
@@ -113,6 +200,7 @@ if (stringTipo == "pelicula") {
                         </div>
                     `
                 }
+                    
             })
             .catch(function (error){
                 console.log('El error fue: '+error);
@@ -120,8 +208,7 @@ if (stringTipo == "pelicula") {
 
 
 
-
-        fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US`)
+            fetch (`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=${apiKey}&language=en-US`)
             .then(function (response) {
                 return response.json()
             })
@@ -130,6 +217,7 @@ if (stringTipo == "pelicula") {
             
                 for (let index = 0; index < data.results.length; index++) {
                     const element = data.results[index];
+
                     reviews.innerHTML += `
                         <div>
                             <article class="uk-comment">
@@ -155,102 +243,15 @@ if (stringTipo == "pelicula") {
                     `
                 }
             })
-
             .catch(function (error){
                 console.log('El error fue: '+error);
             })
 
-}
+    }
 
-else if (stringTipo == "serie") {
-
-    article.innerHTML = ''
-
-        fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=en-US`)
-        .then(function (response) {
-            return response.json()
-        })
-        .then(function (data) {
-            console.log (data);
-        
-            for (let index = 0; index < data.results.length; index++) {
-                const element = data.results[index];
-                detalles.innerHTML += `
-                    <div>
-                        <article class="uk-comment">
-                            <header class="uk-comment-header">
-                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-comment-avatar" src="${linkImagen}${element.poster_path}" width="80" height="80" alt="">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${element.name}</a></h4>
-                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                            <li><a href="#">${element.release_date}</a></li>
-                                            <li><a href="#">${element.runtime}</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </header>
-                            <div class="uk-comment-body">
-                                <p>${element.overview}</p>
-                            </div>
-                        </article>
-                    </div>
-                `
-            }
-                
-        })
-        .catch(function (error){
-            console.log('El error fue: '+error);
-        })
+}) //fin
 
 
-
-        fetch (`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=${apiKey}&language=en-US`)
-        .then(function (response) {
-            return response.json()
-        })
-        .then(function (data) {
-            console.log (data);
-        
-            for (let index = 0; index < data.results.length; index++) {
-                const element = data.results[index];
-
-                reviews.innerHTML += `
-                    <div>
-                        <article class="uk-comment">
-                            <header class="uk-comment-header">
-                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-comment-avatar" src="${linkImagen}${element.poster_path}" width="80" height="80" alt="">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${element.name}</a></h4>
-                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                            <li><a href="#">${element.release_date}</a></li>
-                                            <li><a href="#">${element.runtime}</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </header>
-                            <div class="uk-comment-body">
-                                <p>${element.overview}</p>
-                            </div>
-                        </article>
-                    </div>
-                `
-            }
-        })
-        .catch(function (error){
-            console.log('El error fue: '+error);
-        })
-
-}
-
-}) 
-
-//fin
 
 
 //function armarContenidoTv(id) {
