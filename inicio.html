@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <script src="js/inicio.js"></script>
     <script src="js/detalles.js"></script>
+    <script src="js/inicioSesion.js"></script>
 
 <!-- CSS NOSOTRAS -->
     <link rel="stylesheet" href="css/style.css">
@@ -40,6 +41,40 @@
                             <span uk-search-icon></span>
                             <input class="uk-search-input" type="buscador" placeholder="Buscador..." name="buscador">
                         </form>
+
+                        <li class="li-menu">
+                            <a class="uk-button uk-button-default" href="#modal-container" uk-toggle id="iniciarSesion">Iniciar Sesión</a>
+                        </li>
+                            <div id="modal-container" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="fede">Iniciar Sesión</h2>
+                            <form class="form" action="index.html" method="post" >
+                                <label for="Nombre"></label>Nombre
+                                <input id= "nombre" type="text" name="nombre" value="" required>
+
+                                <br>
+                                <br>
+
+                                <label for="email"></label>Email
+                                <input id= "email" type="email" name="email" value="" required>
+                                <br>
+                                <br>
+                                
+                                Género
+                                
+                                <select class="" name="gender">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="O">Otro</option>
+                                </select>
+                                
+                                <br>
+                                <br>
+                                
+                                <button type="submit" name="button">Ingresar</button>
+                            </form>
+          
                 </ul>
             </div>
         </nav>
