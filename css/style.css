@@ -27,8 +27,21 @@ body{
     padding: 0%;
 }
 
+header {
+    position:fixed;
+    top:0;
+    overflow: hidden;
+    left: 0;
+    z-index:1;
+    width: 100%;
+}
+
+#bajar {
+    padding-top: 75px;
+}
+
 .navbar {
-    display: flex;
+    display: block;
     align-items: flex-end !important;
 }
 
@@ -85,8 +98,77 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     font-weight: 700;
 }
 
+.titulos1 {
+    display: flex;
+    font-style: bold;
+    color: white;
+    /*background-color: rgb(227, 184, 255);*/
+    font-family: montserrat;
+   /* color: rgb(41, 39, 39); */
+    padding: 10PX;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    padding-top: 120px;
+}
+
+.titulos2 {
+    display: flex;
+    font-style: bold;
+    color: white;
+    /*background-color: rgb(227, 184, 255);*/
+    font-family: montserrat;
+   /* color: rgb(41, 39, 39); */
+    padding: 10PX;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    padding-top: 150px;
+}
+
 .PeliculasMasRecientes li {
     width: auto;
+}
+
+.PeliculasMasRecientes img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.PeliculasMasRecientes img:hover {
+    margin-top: 10px;
+
+}
+
+
+.rectangulo a {
+    display:inline-block;
+    position:relative;
+}
+
+.rectangulo-div-li > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+  }
+
+.rectangulo:hover {
+    opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+
 }
 
 .PeliculasMasVistas li {
@@ -184,8 +266,17 @@ color: white;
 }
 
 
+.resultados {
+    width: 350px;
+
+}
 
 
+
+
+
+
+                                       /* MEDIA QUERIES */   
 
 @media (min-width: 960px){
     .uk-child-width-1-2\@m>* {

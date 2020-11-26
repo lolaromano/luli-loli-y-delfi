@@ -8,17 +8,25 @@ window.addEventListener('load',function() {
     var queryString = location.search;
     var queryStringObj = new URLSearchParams(queryString);
 
-    var buscadorPelis = document.querySelector (".resultadosPeliculas");
-    var buscadorSeries = document.querySelector (".resultadosSeries");
+    var buscadorPelis = document.querySelector ("ul.resultadosPeliculas");
+    var buscadorSeries = document.querySelector ("ul.resultadosSeries");
 
+<<<<<<< HEAD
     var buscando = queryStringObj.get("buscador");
 
   
+=======
+    console.log(buscadorPelis);
+    console.log(buscadorSeries);
+
+
+    var buscando = queryStringObj.get("buscador");
+>>>>>>> 3fe00db511948eb971d3e33318455949dfbad812
 
 ///////nuevo
 
 
-fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
+fetch (`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
     .then(function (response) {
         return response.json()
     })
@@ -32,13 +40,24 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
       
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
+
             buscadorPelis.innerHTML +=
 
             `<li>
-                <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a>
-                <img src="${linkImagen}${element.poster_path}" alt="">
-            </li>
-            `
+            <div class="resultados uk-child-width-1-2@m" uk-grid>
+                <div class="uk-inline">
+                    <div class="uk-panel">
+                            <a href="detalles.html?tipo=${element.media_type}&id=${element.id}>${element.title}">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a>
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                                        
+                    </div>
+                </div>
+            </div>
+    </li>`
+            
+            console.log(linkImagen + element.poster_path);
         }
         console.log("aaaaaaaaaaaaaaaa");
         console.log (data);
@@ -52,7 +71,7 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
     })
 
 
-fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
+fetch (`https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
     .then(function (response) {
         return response.json()
     })
@@ -63,11 +82,23 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
             buscadorSeries.innerHTML +=
-            `<li> 
-                <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a>
-                <img src="${linkImagen}${element.poster_path}" alt="">
-            </li>
-            `
+            
+            `<li>
+                    <div class="resultados uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel">
+                                    <a href="detalles.html?tipo=${element.media_type}&id=${element.id}>${element.title}">
+                                        <img src="${linkImagen}${element.poster_path}" alt="">
+                                    </a>
+                                <div class="uk-position-center uk-panel"><h1></h1></div>
+                                                
+                            </div>
+                        </div>
+                    </div>
+             </li>`
+                ;
+            
+        
         }
     })
 
