@@ -59,6 +59,79 @@ window.addEventListener("load", function() {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+var removeFavorite = document.querySelector('#removeFavorite')
+var addFavorite = document.querySelector('#addFavorite')
+
+var favs;
+        if (favs == null) {
+                favs = [];    
+        
+        } else {
+            favs = JSON.parse(localStorage.getItem("favoritos"))
+        }
+
+for (let index = 0; index < favs.length; index++) {
+    const element = favs[index];
+    if (preferidas.some(peli=>peli.id===idElegido)) {
+        removeFavorite.style.display = 'block';
+        addFavorite.style.display = 'none';
+     
+            
+        } else{
+        removeFavorite.style.display = 'none';
+        addFavorite.style.display = 'block';
+
+        }
+    
+}
+var arrayFavs;
+        if (favs == null) {
+                arrayFavs = [];    
+        
+        } else {
+            arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+        }
+addFavorite.addEventListener("click", function () {
+        
+        console.log('apretaste el boton de favoritos');
+
+        removeFavorite.style.display = 'block';
+        addFavorite.style.display = 'none';
+       
+        
+
+        arrayFavs.push({
+            tipo: tipo,
+            id: idElegido
+        });
+
+        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
+})
+
+
+
+removeFavorite.addEventListener('click', function (){
+    removeFavorite.style.display = 'none';
+    addFavorite.style.display = 'block';
+    var favs = JSON.parse(localStorage.getItem("favoritos"))
+    for (let i = 0; i < favs.length; i++) {
+        const element = favs[i];
+        if ((element.id == idElegido)&&(element.tipo == tipo)){
+            alert('asjdask')
+            console.log(`esta es la que hay que borrar ${element.id} con tipo ${element.tipo}`)
+            favs.splice(i,1);
+            localStorage.setItem("favoritos", JSON.stringify(favs))
+        }
+        
+    }
+})
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
     
     var detalles = document.querySelector(`#DETALLES`)
     var reviews = document.querySelector(`#REVIEWS`)
@@ -66,82 +139,93 @@ window.addEventListener("load", function() {
     var queryString = location.search
     var queryStringObj = new URLSearchParams(queryString)
     var id = queryStringObj.get(`id`)
+    var mediaType = queryStringObj.get (`media_type`)
 
     console.log('la peli elegida es '+ id);
 
+    if (mediaType == 'movie'){
 
-            fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`)
-                .then(function (response) {
-                    return response.json()
-                })
-                .then(function (data) {
-                    console.log (data);
-                                    
-                        detalles.innerHTML += `
-                            <div>
-                                <article class="uk-comment">
-                                    <header class="uk-comment-header">
-                                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                                            <div class="uk-width-auto">
-                                                <img class="uk-comment-avatar" src="${linkImagen}${data.poster_path}" width="80" height="80" alt="">
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${data.original_title}</a></h4>
-                                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                    <li><a href="#">${data.release_date}</a></li>
-                                                    <li><a href="#">${data.runtime}m</a></li>
-                                                </ul>
-                                            </div>
+        fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (data) {
+                console.log (data);
+                                
+                    detalles.innerHTML += `
+                        <div>
+                            <article class="uk-comment" id="bajar1">
+                                <header class="uk-comment-header">
+                                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-comment-avatar" src="${linkImagen}${data.poster_path}" width="80" height="80" alt="">
                                         </div>
-                                    </header>
-                                    <div class="uk-comment-body">
-                                        <p>${data.overview}</p>
+                                        <div class="uk-width-expand">
+                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#" id= "tituloReviews">${data.original_title}</a></h4>
+                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                <li><a href="#">${data.release_date}</a></li>
+                                                <li><a href="#">${data.runtime}m</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </article>
-                            </div>
-                        `
-                })
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p>${data.overview}</p>
+                                </div>
+                            </article>
+                        </div>
+                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top" id="botonFavorito" name="${data.id}">
+                            <li><a href="#">Agregar a Mi Lista</a><a href="" class="uk-icon-button" uk-icon="plus-circle"></a></li>
+                        </ul>
+                    `
+            })
 
-                .catch(function (error){
-                    console.log('El error fue: '+error);
+            .catch(function (error){
+                console.log('El error fue: '+error);
 
-                })
+            })
 
 
-            fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US`)
-                .then(function (response) {
-                    return response.json()
-                })
-                .then(function (data) {
-                    console.log (data);
-                
-                    for (let index = 0; index < data.results.length; index++) {
-                        const element = data.results[index];
-                        
-                        reviews.innerHTML += `
-                        <div class="uk-card uk-card-default uk-width-1-2@m">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+        fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US`)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (data) {
+                console.log (data);
+            
+                for (let i = 0; i < data.results.length; i++) {
+                    const element = data.results[i];
+                    
+                    reviews.innerHTML += `
+                        <header class="uk-comment-header">
+                            <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                 <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Reviews</h3>
-                                    <p class="uk-text-meta uk-margin-remove-top">${element.author}</p>
+                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#" id="tituloReviews">Reviews</a></h4>
+                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                        <li><a href="#">${element.author}</a></li>
+                                        <li><a href="#">RATING = ${element.author_details.rating}</a></li>
+                                    </ul>
                                 </div>
                             </div>
+                        </header>
+                        <div class="uk-comment-body">
+                            <p id="parrafoReviews" >${element.content}</p>
                         </div>
-                        <div class="uk-card-body">
-                            <p>${element.content}</p>
-                        </div>
-                        `
-                    }
-                })
+                    `
+                }
 
-                .catch(function (error){
-                    console.log('El error fue: '+error);
-                })
-    
-    
+            })
 
-                fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=en-US`)
+            .catch(function (error){
+                console.log('El error fue: '+error);
+            })
+
+    }
+    
+//////////////////////////////////////////SERIES/////////////////////////////////////////////////////////////
+    else if (mediaType == 'tv') {
+
+            fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=en-US`)
                 .then(function (response) {
                     return response.json()
                 })
@@ -157,10 +241,10 @@ window.addEventListener("load", function() {
                                                     <img class="uk-comment-avatar" src="${linkImagen}${data.poster_path}" width="80" height="80" alt="">
                                                 </div>
                                                 <div class="uk-width-expand">
-                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${data.original_title}</a></h4>
+                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${data.original_name}</a></h4>
                                                     <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
                                                         <li><a href="#">${data.release_date}</a></li>
-                                                        <li><a href="#">${data.runtime}m</a></li>
+                                                        <li><a href="#">${data.number_of_seasons}</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -170,6 +254,9 @@ window.addEventListener("load", function() {
                                         </div>
                                     </article>
                                 </div>
+                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top" id="botonFavorito" name="${data.id}">
+                                    <li><a href="#">Agregar a Mi Lista</a><a href="" class="uk-icon-button" uk-icon="plus-circle"></a></li>
+                                 </ul>
                             `   
                 })
     
@@ -186,22 +273,24 @@ window.addEventListener("load", function() {
                 .then(function (data) {
                     console.log (data);
                 
-                    for (let index = 0; index < data.results.length; index++) {
-                        const element = data.results[index];
-    
-                        reviews.innerHTML += `
-                            <div class="uk-card uk-card-default uk-width-1-2@m">
-                            <div class="uk-card-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-expand">
-                                        <h3 class="uk-card-title uk-margin-remove-bottom">Reviews</h3>
-                                        <p class="uk-text-meta uk-margin-remove-top">${element.author}</p>
+                    for (let i = 0; i < data.results.length; i++) {
+                        const element = data.results[i];
+                            
+                            reviews.innerHTML += `
+                                <header class="uk-comment-header">
+                                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#" id="tituloReviews">Reviews</a></h4>
+                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                <li><a href="#">${element.author}</a></li>
+                                                <li><a href="#">RATING = ${element.author_details.rating}</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p id="parrafoReviews" >${element.content}</p>
                                 </div>
-                            </div>
-                            <div class="uk-card-body">
-                                <p>${element.content}</p>
-                            </div>
                         `
                     }
                 })
@@ -210,37 +299,58 @@ window.addEventListener("load", function() {
                     console.log('El error fue: '+error);
                 })
     
-    
-    
+    }
+
 
 }) //fin
 
 
+/*
+var share = document.querySelector('#share')
+    share.addEventListener("click", function () {
+        alert(apretaste share)
+    })
+*/
 
-
-//function armarContenidoTv(id) {
-
-
-//estamos en una serie
-//oculto el div de movies- muestro div de tv
-
-//fetch al detalle de tv
-//https://api.themoviedb.org/3/tv/{tv_id}?api_key=<<api_key>>&language=en-US
-
+/*
+var arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+if (arrayFavs == null) {
     
-//}
+} else if (arrayFavs.indexOf(id) === -1 ){
 
-//function armarContenidoMovies(id) {
-    
-//estamos en peliculas
-//oculto el div de tv- muestro div de movies
+} else {
+    document.querySelector("#botonFavorito").style.backgroundColor = "gold"
+}
 
-//fetch al detalle de movie
-//https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
+var boton = document.getElementById("#botonFavorito")
 
-//}
+boton.addEventListener("click",function(){
 
-////////////////////////////////
+    if (arrayFavs == null) {
+        arrayFavs = [];
+        arrayFavs.push(boton)
+        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
+
+      }else if(arrayFavs.indexOf(boton) === -1){
+
+        arrayFavs.push(boton)
+        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
+        document.querySelector("#botonFavorito").style.backgroundColor = "gold"
+
+      }
+        else {
+        console.log(arrayFavs.indexOf(boton));
+        arrayFavs.splice(arrayFavs.indexOf(boton),1);
+        console.log(arrayFavs)
+        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
+        document.querySelector("#botonFavorito").style.backgroundColor = "white"
+      }
+
+      console.log(boton);
+      console.log(JSON.parse(localStorage.getItem("favoritos")));
+
+    })
+*/
 
 
 

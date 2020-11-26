@@ -87,13 +87,10 @@ var id = queryStringObj.get("id");
                                         <img src="${linkImagen}${element.poster_path}" alt="">
                                     </a>
                                     <div class="uk-position-center uk-panel"><h1></h1></div>
-<<<<<<< HEAD
                                     <div class="uk-overlay uk-overlay-primary uk-position-bottom">
                                         <div class="uk-width-expand">                            
-=======
                                     <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                         <div class="inicio uk-width-expand">                            
->>>>>>> 3fe00db511948eb971d3e33318455949dfbad812
                                             <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
                                                 <li><a href="#">${element.release_date}</a></li>                                                             
                                                 <li><a href="#">${element.original_language}</a></li>                            

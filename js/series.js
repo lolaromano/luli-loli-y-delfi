@@ -24,7 +24,6 @@ window.addEventListener('load',function(){
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
-        
                 `;
 
                 console.log(linkImagen + element.poster_path);

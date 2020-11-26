@@ -27,7 +27,7 @@ body{
     padding: 0%;
 }
 
-header {
+.encabezado {
     position:fixed;
     top:0;
     overflow: hidden;
@@ -38,6 +38,32 @@ header {
 
 #bajar {
     padding-top: 75px;
+}
+
+#bajar1 {
+    padding-top: 45px;
+}
+
+#DETALLES {
+    padding-top: 120px;
+    background-color: black;
+}
+
+#REVIEWS{
+    margin: 0px;
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    padding-top: 0px;
+}
+
+#tituloReviews {
+    color: white !important;
+    padding-bottom: 5px;
+}
+#parrafoReviews {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -74,9 +100,7 @@ canvas img video {
 .uk-nav li {
     display: inline;
     padding-left: 2px;
-    float: left;
     padding-bottom: 2px;
-    width: 30%;
     padding-top: 2px;
 }
 
@@ -126,6 +150,10 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     font-size: 1.4vw;
     font-weight: 700;
     padding-top: 150px;
+}
+
+.button {
+    width: 20px;
 }
 
 .PeliculasMasRecientes li {
