@@ -20,7 +20,9 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen}${element.poster_path}" alt="">
+                        <a href="detalles.html?id=${element.id}&media_type=movie">
+                            <img src="${linkImagen}${element.poster_path}" alt="">
+                        </a>
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
@@ -54,7 +56,9 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen}${element.poster_path}" alt="">
+                        <a href="detalles.html?id=${element.id}&media_type=movie">
+                            <img src="${linkImagen}${element.poster_path}" alt="">
+                        </a>
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
@@ -88,7 +92,9 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen}${element.poster_path}" alt="">
+                        <a href="detalles.html?id=${element.id}&media_type=movie">
+                            <img src="${linkImagen}${element.poster_path}" alt="">
+                        </a>
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
@@ -122,7 +128,9 @@ window.addEventListener('load',function(){
                 ul.innerHTML += `
                 <li>
                 <div class="uk-panel"> 
-                        <img src="${linkImagen}${element.poster_path}" alt="">
+                        <a href="detalles.html?id=${element.id}&media_type=movie">
+                            <img src="${linkImagen}${element.poster_path}" alt="">
+                        </a>
                         <div class="uk-position-center uk-panel"><h1></h1></div>
                         </div>
                 </li>
@@ -156,7 +164,9 @@ window.addEventListener('load',function(){
             ul.innerHTML += `
             <li>
             <div class="uk-panel"> 
-                    <img src="${linkImagen}${element.poster_path}" alt="">
+                    <a href="detalles.html?id=${element.id}&media_type=movie">
+                        <img src="${linkImagen}${element.poster_path}" alt="">
+                    </a>
                     <div class="uk-position-center uk-panel"><h1></h1></div>
                     </div>
             </li>

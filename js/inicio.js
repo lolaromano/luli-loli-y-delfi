@@ -83,12 +83,10 @@ var id = queryStringObj.get("id");
                         <div class="uk-child-width-1-2@m" uk-grid>
                             <div class="uk-inline">
                                 <div class="uk-panel">
-                                    <a href="detalles.html?id=${element.id}">
+                                    <a href="detalles.html?id=${element.id}&media_type=movie">
                                         <img src="${linkImagen}${element.poster_path}" alt="">
                                     </a>
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-                                        <div class="uk-width-expand">                            
+                                    <div class="uk-position-center uk-panel"><h1></h1></div>                        
                                     <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                         <div class="inicio uk-width-expand">                            
                                             <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
@@ -96,6 +94,7 @@ var id = queryStringObj.get("id");
                                                 <li><a href="#">${element.original_language}</a></li>                            
                                             </ul>  
                                         </div>                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +130,7 @@ var id = queryStringObj.get("id");
                         <div class="uk-child-width-1-2@m" uk-grid>
                             <div class="uk-inline">
                                 <div class="uk-panel"> 
-                                <a href="detalles.html?id=${element.id}">
+                                <a href="detalles.html?id=${element.id}&media_type=movie">
                                     <img src="${linkImagen}${element.poster_path}" alt="">
                                 </a> 
                                 <div class="uk-position-center uk-panel"><h1></h1></div>
@@ -177,7 +176,7 @@ var id = queryStringObj.get("id");
                         <div class="uk-child-width-1-2@m" uk-grid>
                             <div class="uk-inline">
                                 <div class="uk-panel"> 
-                                    <a href="detalles.html?id=${element.id}">
+                                    <a href="detalles.html?id=${element.id}&media_type=movie">
                                         <img src="${linkImagen}${element.poster_path}" alt="">
                                     </a>    
                                     <div class="uk-position-center uk-panel"><h1></h1></div>
@@ -223,7 +222,7 @@ var id = queryStringObj.get("id");
                         <div class="uk-child-width-1-2@m" uk-grid>
                             <div class="uk-inline">
                                 <div class="uk-panel"> 
-                                <a href="detalles.html?id=${element.id}">
+                                <a href="detalles.html?id=${element.id}&media_type=tv">
                                     <img src="${linkImagen}${element.poster_path}" alt="">
                                 </a>
                                 <div class="uk-position-center uk-panel"><h1></h1></div>
@@ -269,7 +268,7 @@ var id = queryStringObj.get("id");
                     <div class="uk-child-width-1-2@m" uk-grid>
                         <div class="uk-inline">
                             <div class="uk-panel"> 
-                            <a href="detalles.html?id=${element.id}">
+                            <a href="detalles.html?id=${element.id}&media_type=tv">
                                 <img src="${linkImagen}${element.poster_path}" alt="">
                             </a>
                             <div class="uk-position-center uk-panel"><h1></h1></div>
