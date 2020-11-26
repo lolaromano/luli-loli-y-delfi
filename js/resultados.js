@@ -11,7 +11,9 @@ window.addEventListener('load',function() {
     var buscadorPelis = document.querySelector (".resultadosPeliculas");
     var buscadorSeries = document.querySelector (".resultadosSeries");
 
-    var buscando = queryStringObj.get("search");
+    var buscando = queryStringObj.get("buscador");
+
+  
 
 ///////nuevo
 
@@ -31,12 +33,16 @@ fetch (`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
             buscadorPelis.innerHTML +=
+
             `<li>
                 <a class="buscador" href="detalle.html?type=${element.id}>${element.title}</a>
                 <img src="${linkImagen}${element.poster_path}" alt="">
             </li>
             `
         }
+        console.log("aaaaaaaaaaaaaaaa");
+        console.log (data);
+      
     })
 
 
