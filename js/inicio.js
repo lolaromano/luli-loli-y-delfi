@@ -87,7 +87,7 @@ var id = queryStringObj.get("id");
                                         <img src="${linkImagen}${element.poster_path}" alt="">
                                     </a>
                                     <div class="uk-position-center uk-panel"><h1></h1></div>
-                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                         <div class="inicio uk-width-expand">                            
                                             <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
                                                 <li><a href="#">${element.release_date}</a></li>                                                             
