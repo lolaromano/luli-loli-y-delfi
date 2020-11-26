@@ -1,3 +1,4 @@
+
 window.addEventListener('load',function() {
    
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c';
@@ -12,7 +13,7 @@ window.addEventListener('load',function() {
     var buscadorSeries = document.querySelector ("ul.resultadosSeries");
 
     var buscando = queryStringObj.get("buscador");
-
+    var spinner = document.querySelector(".loader")
   
     console.log(buscadorPelis);
     console.log(buscadorSeries);

@@ -99,7 +99,7 @@ canvas img video {
     box-sizing: border-box;
  }
 
-.uk-nav {
+ .uk-nav {
     padding-right: 0px;
     padding-left: 0px;
     float: left;
@@ -107,22 +107,18 @@ canvas img video {
     margin: 15px 0px;
     width: 100%;
     padding-top: 0px;
-    list-style-type: none;   
+    list-style-type: none;
 }
-
 .uk-nav li {
     display: inline;
     padding-left: 2px;
+    float: left;
     padding-bottom: 2px;
+    width: 30%;
     padding-top: 2px;
 }
-
 ul#menugeneros.uk-nav.uk-dropdown-nav {
-    display: flex;
     width: 700px;
-    grid-template-columns: 1fr 1fr;
-    
-
 }
 
 .titulos {
@@ -132,11 +128,12 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     /*background-color: rgb(227, 184, 255);*/
     font-family: montserrat;
    /* color: rgb(41, 39, 39); */
-    padding: 10PX;
+    padding-top: 10px;
     font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 .titulos1 {
@@ -146,12 +143,12 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     /*background-color: rgb(227, 184, 255);*/
     font-family: montserrat;
    /* color: rgb(41, 39, 39); */
-    padding: 10PX;
     font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
-    padding-top: 120px;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .titulos2 {
@@ -167,6 +164,23 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     font-size: 1.4vw;
     font-weight: 700;
     padding-top: 150px;
+    padding-left: 10px;
+}
+
+.titulos3 {
+    display: flex;
+    font-style: bold;
+    color: white;
+    /*background-color: rgb(227, 184, 255);*/
+    font-family: montserrat;
+   /* color: rgb(41, 39, 39); */
+    padding-top: 10px;
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    line-height: 1.25vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-left: 10px;
 }
 
 .button {
@@ -261,12 +275,11 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     font-style: bold;    
     line-height: 1.25vw;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
-    margin: 10px;
-    margin-top: 40px;
     font-size: 38px;
     font-weight: 700;
     white-space: nowrap;
-    margin-right: 15px;
+    padding-left: 10px;
+    padding-top: 120px;
 }
 
 .accion li {
@@ -300,6 +313,17 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     margin-bottom: 30px;
     margin-left: 5px;
 
+
+}
+
+.terminos4{
+    text-align: justify;
+    font-size: 30px;
+    line-height: 8px;
+    color: white;
+    margin-bottom: 200px;
+
+
 }
 
 .pregunta {
@@ -321,6 +345,11 @@ color: white;
 
 }
 
+.loader{
+    color: white !important; 
+    display: flex;
+    justify-content: center;
+}
 
 
 

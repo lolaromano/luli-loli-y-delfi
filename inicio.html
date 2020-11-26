@@ -27,15 +27,22 @@
                 <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
                         <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
                         <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="generos.html">Géneros<span uk-icon="icon:  triangle-down"></span></a>
-                                <div uk-dropdown="mode: click;">
-                                    <ul class="uk-nav uk-dropdown-nav" id="menugeneros">
-                                
-                                    </ul>
-                                </div>
+                        <li><a href="generos.html">Géneros</a></li>
+                        <li><a href="series.html">Series<span uk-icon="icon:  triangle-down"></span></a>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="menugenerosSeries uk-nav uk-dropdown-nav" id="menugeneros">
+                            
+                                </ul>
+                            </div>
                         </li>
-                        <li><a href="series.html">Series</a></li>
-                        <li><a href="peliculas.html">Películas</a></li>
+                        <li><a href="peliculas.html">Películas<span uk-icon="icon:  triangle-down"></span></a>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="menugenerosPelis uk-nav uk-dropdown-nav" id="menugeneros">
+                            
+                                </ul>
+                            </div>
+                        </li>
+
                         <li><a href="favoritos.html">Mi Lista</a></li>
                         <form class="uk-search uk-search-default" method="GET" action="resultados.html">
                             <span uk-search-icon></span>
@@ -99,7 +106,7 @@
     </div>
     
     
-    <h2 class="titulos1">Películas más recientes</h2> 
+    <h2 class="titulos3">Películas más recientes</h2> 
 
         <div class="PeliculasMasRecientes uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
         

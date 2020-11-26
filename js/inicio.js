@@ -15,10 +15,10 @@ window.addEventListener('load',function(){
       for (let index = 0; index < data.genres.length; index++) {
         const element = data.genres[index];
        
-        var menugenerospeliculas = document.querySelector ("#menugeneros");
+        var menugenerosPelis = document.querySelector (".menugenerosPelis");
 
-         menugeneros.innerHTML +=
-          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+         menugenerosPelis.innerHTML +=
+          `<li><a href="generosDetail.html?group=movies&idgenre=${element.id}&media_type=movie">${element.name}</a></li>`
           console.log (element)
       };
 
@@ -42,10 +42,10 @@ fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en
       for (let index = 0; index < data.genres.length; index++) {
         const element = data.genres[index];
        
-        var menugenerospeliculas = document.querySelector ("#menugeneros");
+        var menugenerosSeries = document.querySelector (".menugenerosSeries");
 
-         menugeneros.innerHTML +=
-          `<li><a href="generos.html?group=movies&idgenre=${element.id}">${element.name}</a></li>`
+         menugenerosSeries.innerHTML +=
+          `<li><a href="generosDetail.html?group=tv&idgenre=${element.id}&media_type=tv">${element.name}</a></li>`
           console.log (element)
       };
 
@@ -79,26 +79,25 @@ var id = queryStringObj.get("id");
                 const element = data.results [index];
                 
                 ul.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel">
-                                    <a href="detalles.html?id=${element.id}&media_type=movie">
-                                        <img src="${linkImagen}${element.poster_path}" alt="">
-                                    </a>
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>                        
-                                    <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
-                                        <div class="inicio uk-width-expand">                            
-                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                                <li><a href="#">${element.release_date}</a></li>                                                             
-                                                <li><a href="#">${element.original_language}</a></li>                            
-                                            </ul>  
-                                        </div>                      
-                                    </div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="rectangulo uk-position-center uk-panel"><h1></h1></div>
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
                             </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);

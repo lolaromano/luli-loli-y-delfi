@@ -21,40 +21,76 @@
     
     <header class="encabezado">
         
-        <nav class="navbar uk-navbar-container" uk-navbar>
+        <nav class="navbar uk-navbar-container">
             <div class="uk-width-1-1">
                 <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
                         <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
                         <li><a href="inicio.html">Inicio</a></li>
-                        <!--<li><a href="generos.html">Géneros</a>-->
-                        <li><a href="generos.html">Géneros<span uk-icon="icon:  triangle-down"></span></a>
-                                <div uk-dropdown="mode: click;">
-                                    <ul class="uk-nav uk-dropdown-nav" id="menugeneros">
-                                   
-                                    </ul>
-                                </div>
+                        <li><a href="generos.html">Géneros</a></li>
+                        <li><a href="series.html">Series<span uk-icon="icon:  triangle-down"></span></a>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="menugenerosSeries uk-nav uk-dropdown-nav" id="menugeneros">
+                            
+                                </ul>
+                            </div>
                         </li>
-                        <li><a href="series.html">Series</a></li>
-                        <li><a href="peliculas.html">Películas</a></li>
+                        <li><a href="peliculas.html">Películas<span uk-icon="icon:  triangle-down"></span></a>
+                            <div uk-dropdown="mode: click;">
+                                <ul class="menugenerosPelis uk-nav uk-dropdown-nav" id="menugeneros">
+                            
+                                </ul>
+                            </div>
+                        </li>
+
                         <li><a href="favoritos.html">Mi Lista</a></li>
-                        <div class="buscador">
-                            <form action="resultados.html" method="GET" id="buscador">
-                                <input type="text" placeholder="Buscar" name="buscador">
-                                <button>Buscar</button>
+                        <form class="uk-search uk-search-default" method="GET" action="resultados.html">
+                            <span uk-search-icon></span>
+                            <input class="uk-search-input" type="buscador" placeholder="Buscador..." name="buscador">
+                        </form>
+
+                        <li class="li-menu">
+                            <a class="uk-button uk-button-default" href="#modal-container" uk-toggle id="iniciarSesion">Iniciar Sesión</a>
+                        </li>
+                            <div id="modal-container" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="fede">Iniciar Sesión</h2>
+                            <form class="form" action="index.html" method="post" >
+                                <label for="Nombre"></label>Nombre
+                                <input id= "nombre" type="text" name="nombre" value="" required>
+
+                                <br>
+                                <br>
+
+                                <label for="email"></label>Email
+                                <input id= "email" type="email" name="email" value="" required>
+                                <br>
+                                <br>
+                                
+                                Género
+                                
+                                <select class="" name="gender">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="O">Otro</option>
+                                </select>
+                                
+                                <br>
+                                <br>
+                                
+                                <button type="submit" name="button">Ingresar</button>
                             </form>
-                        </div>
+          
                 </ul>
             </div>
         </nav>
 
+        
     </header>
 
-  
-    <div class="loader">
-    </div>
-
     <div>
-        <h2 class="terminos1">Resultados de Búsqueda</h2>
+        <h2 class="terminos4">Resultados de Búsqueda</h2>
+        <span uk-spinner="ratio: 4.5" class="loader"></span>
     </div>
 
   
