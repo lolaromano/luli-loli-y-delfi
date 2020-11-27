@@ -1,6 +1,12 @@
 
 window.addEventListener('load',function() {
    
+    /////////////////SPINNER///////////////
+    var spinner = document.querySelector (".loader")
+    spinner.style.display = "none";
+    setTimeout (function(){ }, 6000);
+
+  
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c';
     var linkImagen = "https://image.tmdb.org/t/p/w500";
 
@@ -13,7 +19,6 @@ window.addEventListener('load',function() {
     var buscadorSeries = document.querySelector ("ul.resultadosSeries");
 
     var buscando = queryStringObj.get("buscador");
-    var spinner = document.querySelector(".loader")
   
     console.log(buscadorPelis);
     console.log(buscadorSeries);
@@ -22,6 +27,22 @@ window.addEventListener('load',function() {
     var buscando = queryStringObj.get("buscador");
 
 ///////nuevo
+
+if (media_type == "movie") {
+
+    fetch ()
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(data){
+            console.log(data)
+
+            spinner.style.display = "none"
+        })
+    
+}
+
+
 
 
 fetch (`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
