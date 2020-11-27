@@ -206,7 +206,7 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 }
 
 .tituloFavoritos {
-    padding-top: 100px;
+    padding-top: 120px;
     display: flex;
     color: white;
     font-style: bold;    
@@ -216,6 +216,10 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     font-weight: 700;
     white-space: nowrap;
     padding-left: 10px;
+}
+
+.favsVacio {
+padding-left: 10px;
 }
 
 .rectangulo a {
