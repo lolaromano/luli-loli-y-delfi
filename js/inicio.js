@@ -130,7 +130,7 @@ var id = queryStringObj.get("id");
                                 <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                     <div class="uk-width-expand">                            
                                         <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">RANKING = ${element.vote_average}</a></li>                                                             
                                             <li><a href="#">${element.original_language}</a></li>                            
                                         </ul>  
                                     </div>                      
@@ -176,8 +176,8 @@ var id = queryStringObj.get("id");
                                 <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                     <div class="uk-width-expand">                            
                                         <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                            <li><a href="#">${element.release_date}</a></li>                                                             
-                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        <li><a href="#">RANKING = ${element.vote_average}</a></li>                                                             
+                                        <li><a href="#">${element.original_language}</a></li>                            
                                         </ul>  
                                     </div>                      
                             </div>
@@ -222,8 +222,8 @@ var id = queryStringObj.get("id");
                         <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                             <div class="uk-width-expand">                            
                                 <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                    <li><a href="#">${element.release_date}</a></li>                                                             
-                                    <li><a href="#">${element.original_language}</a></li>                            
+                                <li><a href="#">RANKING = ${element.vote_average}</a></li>                                                             
+                                <li><a href="#">${element.original_language}</a></li>                            
                                 </ul>  
                             </div>                      
                     </div>

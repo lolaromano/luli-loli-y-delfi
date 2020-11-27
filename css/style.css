@@ -60,6 +60,7 @@ body{
 #DETALLES {
     padding-top: 120px;
     background-color: black;
+
 }
 
 #REVIEWS{
@@ -68,6 +69,7 @@ body{
     padding: 30px;
     background-color: black;
     padding-top: 0px;
+
 }
 
 #tituloReviews {
@@ -205,6 +207,246 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 
 }
 
+.PeliculasMasVistas li {
+    width: auto;
+}
+
+.PeliculasMasVistas img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.PeliculasMasVistas img:hover {
+    margin-top: 10px;
+
+}
+
+.SeriesMasRecientes li {
+    width: auto;
+}
+
+.SeriesMasRecientes img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.SeriesMasRecientes img:hover {
+    margin-top: 10px;
+
+}
+
+.SeriesMasVistas li {
+    width: auto;
+}
+
+.SeriesMasVistas img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.SeriesMasVistas img:hover {
+    margin-top: 10px;
+
+}
+
+.PopularesEniChill li {
+    width: auto;
+}
+
+.PopularesEniChill img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.PopularesEniChill img:hover {
+    margin-top: 10px;
+
+}
+
+.Tendencias li {
+    width: auto;
+}
+
+.Tendencias img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.Tendencias img:hover {
+    margin-top: 10px;
+
+}
+
+.NuevosLanzamientos li {
+    width: auto;
+}
+
+.NuevosLanzamientos img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.NuevosLanzamientos img:hover {
+    margin-top: 10px;
+
+}
+
+.Documentales li {
+    width: auto;
+}
+
+.Documentales img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.Documentales img:hover {
+    margin-top: 10px;
+
+}
+
+.FavoritosDeSiempre li {
+    width: auto;
+}
+
+.FavoritosDeSiempre img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.FavoritosDeSiempre img:hover {
+    margin-top: 10px;
+
+}
+
+.accion li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.accion img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.accion img:hover {
+    margin-top: 10px;
+
+}
+
+.comedia li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.comedia img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.comedia img:hover {
+    margin-top: 10px;
+
+}
+
+.drama li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.drama img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.drama img:hover {
+    margin-top: 10px;
+
+}
+
+.misterio li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.misterio img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.misterio img:hover {
+    margin-top: 10px;
+
+}
+
+.romance li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.romance img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.romance img:hover {
+    margin-top: 10px;
+
+}
+
+
 .tituloFavoritos {
     padding-top: 120px;
     display: flex;
@@ -240,6 +482,7 @@ padding-left: 10px;
 {
     opacity: 0;
 }
+
 .rectangulo:hover {
     opacity: 1;
   -webkit-transition: opacity 500ms;
@@ -247,38 +490,6 @@ padding-left: 10px;
   -o-transition: opacity 500ms;
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
-}
-
-.PeliculasMasVistas li {
-    width: auto;
-}
-
-.SeriesMasRecientes li {
-    width: auto;
-}
-
-.SeriesMasVistas li {
-    width: auto;
-}
-
-.PopularesEniChill li {
-    width: auto;
-}
-
-.Tendencias li {
-    width: auto;
-}
-
-.NuevosLanzamientos li {
-    width: auto;
-}
-
-.Documentales li {
-    width: auto;
-}
-
-.FavoritosDeSiempre li {
-    width: auto;
 }
 
 
@@ -296,27 +507,7 @@ padding-left: 10px;
     padding-top: 120px;
 }
 
-.accion li {
-    width: 350px;
-}
 
-.comedia li {
-    width: 350px;
-}
-
-.drama li {
-    width: 350px;
-}
-
-.misterio li {
-    width: 350px;
-}
-
-.romance li {
-    width: 350px;
-    margin-bottom: 30px;
-
-}
 
 .terminos1 {
     text-align: justify;
@@ -959,7 +1150,10 @@ a:hover{
         display: none;
     }
 
-
+.miLista {
+    color: white;
+    padding-left: 30px;
+}
 
     /* Aca empieza Generos */
 
