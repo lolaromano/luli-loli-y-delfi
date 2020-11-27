@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
                                                 <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${data.original_name}</a></h4>
                                                 <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
                                                     <li><a href="#">${data.first_air_date}</a></li>
-                                                    <li><a href="#">${data.number_of_seasons}</a></li>
+                                                    <li><a href="#">${data.genres.name}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
