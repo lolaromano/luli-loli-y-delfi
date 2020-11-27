@@ -19,15 +19,25 @@ window.addEventListener('load',function(){
                 const element = data.results [index];
                 
                 accion.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                                <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);
@@ -54,15 +64,25 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=e
                 const element = data.results [index];
                 
                 comedia.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                                <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);
@@ -89,15 +109,25 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=e
                 const element = data.results [index];
                 
                 drama.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                                <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);
@@ -124,15 +154,25 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=e
                 const element = data.results [index];
                 
                 misterio.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                                <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);
@@ -159,15 +199,25 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=e
                 const element = data.results [index];
                 
                 romance.innerHTML += `
-                    <li>
-                        <div class="uk-child-width-1-2@m" uk-grid>
-                            <div class="uk-inline">
-                                <div class="uk-panel"> 
-                                    <img src="${linkImagen}${element.poster_path}" alt="">
-                                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                                </div>
+                <li>
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div class="uk-inline">
+                            <div class="uk-panel"> 
+                            <a href="detalles.html?id=${element.id}&media_type=movie">
+                                <img src="${linkImagen}${element.poster_path}" alt="">
+                            </a> 
+                            <div class="uk-position-center uk-panel"><h1></h1></div>
+                                <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
+                                    <div class="uk-width-expand">                            
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
+                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">${element.original_language}</a></li>                            
+                                        </ul>  
+                                    </div>                      
+                            </div>
                         </div>
-                    </li>
+                    </div>
+                </li>
                 `;
 
                 console.log(linkImagen + element.poster_path);

@@ -221,7 +221,6 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 .rectangulo a {
     display:inline-block;
     position:relative;
-
 }
 
 .rectangulo-div-li > div {
@@ -244,7 +243,6 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
   -o-transition: opacity 500ms;
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
-
 }
 
 .PeliculasMasVistas li {
