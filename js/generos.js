@@ -183,5 +183,75 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=e
     
 }) //fin
 
-        
+/*if (generoElegido == 'movie'){
+                fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${idGenero}`)
+                .then(function (response) {
+                        return response.json()
+                    })
+                    .then(function (data) {
+                        console.log (data);
+                        genres.innerHTML +=
+                        `<h2>${element.name}</h2>`
+                        for (let index = 0; index < data.results.length; index++) {
+                            const element = data.results[index];
+                            carrouselGeneros.innerHTML += `
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                                    <li>
+                                        <div class="uk-child-width-1-2@m" uk-grid>
+                                            <div class="uk-inline">
+                                                <div class="uk-panel">
+                                                <a href="detalles.html?id=${element.id}&media_type=movie">
+                                                    <img src="${linkImagen}${element.poster_path}" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </li>
+                                </ul>
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                        `
+                        }
+                    })
+                    .catch(function (error){
+                        console.log('El error fue: '+error);
+                    })
+            }
+            else if (generoElegido == 'tv') {
+                fetch (`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=genre`)
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (data) {
+                    console.log (data);
+                    genres.innerHTML +=
+                    `<h2>${element.name}</h2>`
+                    for (let index = 0; index < data.results.length; index++) {
+                        const element = data.results[index];
+                        carrouselGeneros.innerHTML += `
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+                                <li>
+                                    <div class="uk-child-width-1-2@m" uk-grid>
+                                        <div class="uk-inline">
+                                            <div class="uk-panel">
+                                            <a href="generosDetail.html?id=${element.id}&media_type=tv">
+                                                <img src="${linkImagen}${element.poster_path}" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    </li>
+                            </ul>
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                    `
+                    }
+                })
+                .catch(function (error){
+                    console.log('El error fue: '+error);
+                })
+            }
+            */
     

@@ -205,6 +205,18 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 
 }
 
+.tituloFavoritos {
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    font-style: bold;    
+    line-height: 1.25vw;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+    font-size: 38px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 10px;
+}
 
 .rectangulo a {
     display:inline-block;
@@ -339,6 +351,21 @@ color: white;
     align-items: center;
 }
 
+#eliminar {
+    display: none;
+    background-color: black;
+    height: 40px;
+}
+
+#boton li{
+    padding-left: 18px;
+    padding-top: 7px;
+    
+}
+#boton {
+    background-color: black;
+    height: 40px;
+}
 
 .resultados {
     width: 350px;

@@ -1,4 +1,4 @@
-window.addEventListener('load',function(){
+window.addEventListener('load', function () {
 
     var apiKey = `1dd189fc2111fcf3d905a59b0cd42a3c`
     var linkImagen = `https://image.tmdb.org/t/p/w500`
@@ -16,80 +16,30 @@ window.addEventListener('load',function(){
         favsVacio.style.display = 'none'
 
     }
-    
+
 
     for (let i = 0; i < favsElegidas.length; i++) {
-        const element = favsElegidas[i];
+        console.log("aaaaaaaaaaaaaaaa")
+        console.log(favsElegidas[i])
 
-        if (element.tipo == "movie") {
+        const element = JSON.parse(window.localStorage.getItem(`${favsElegidas[i]}`)) // ahora element es toda la pelicula entera (todos los valores)
 
-            
-            fetch (`https://api.themoviedb.org/3/movie/${element.id}?api_key=${apiKey}&language=en-US`)
-                .then(function (response) {
-                    return response.json()
-                })
 
-                .then(function (data) {
-                    console.log (data);
-
-                    sectionFavoritos.innerHTML += `
+        console.log(element)
+        sectionFavoritos.innerHTML += `
                         <article>
-                            <a href=''></a>
+                            <a href="detalles.html">
                                 <h2>${element.title}</h2>
                                 <img src=${linkImagen}${element.poster_path}>
                             </a>
                         </article>
                     `
-                            
-                })
 
-                .catch(function (error){
-                    console.log('El error fue: '+error);
-                })
 
-        } else {
 
-            fetch (`https://api.themoviedb.org/3/tv/${element.id}?api_key=${apiKey}&language=en-US`)
-                    .then(function (response) {
-                        return response.json()
-                    })
-                    .then(function (data) {
-                        console.log (data);
-
-                        sectionFavoritos.innerHTML += `
-                            <article>
-                                <a href=''></a>
-                                    <h2>${element.title}</h2>
-                                    <img src=${linkImagen}${element.poster_path}>
-                                </a>
-                            </article>
-                        `
-                                
-                    })
-                    .catch(function (error){
-                        console.log('El error fue: '+error);
-                    })
-        }
     }
 
-      
+
+
+
 }) //fin
-
-   /* arrayFavs = [];
-
-    arrayFavs.push(idClickeado);
-
-    localStorage.setItem("favoritos", JSON.stringify(arrayFavs))*/
-
-
-
-
-
-
-
-
-
-
-
-
-

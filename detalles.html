@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,94 +13,100 @@
     <script src="js/inicio.js"></script>
     <script src="js/inicioSesion.js"></script>
 
-<!-- CSS NOSOTRAS -->
+    <!-- CSS NOSOTRAS -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3286a7b3ee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+
     <header class="encabezado">
-        
+
         <nav class="navbar uk-navbar-container">
             <div class="uk-width-1-1">
                 <ul class="uk-navbar-nav uk-width-1-1" id="ul-encabezado-1">
-                        <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG" alt="LogoiChill" width="100px"></a> </li> 
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="generos.html">Géneros</a></li>
-                        <li><a href="series.html">Series<span uk-icon="icon:  triangle-down"></span></a>
-                            <div uk-dropdown="mode: click;">
-                                <ul class="menugenerosSeries uk-nav uk-dropdown-nav" id="menugeneros">
-                            
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="peliculas.html">Películas<span uk-icon="icon:  triangle-down"></span></a>
-                            <div uk-dropdown="mode: click;">
-                                <ul class="menugenerosPelis uk-nav uk-dropdown-nav" id="menugeneros">
-                            
-                                </ul>
-                            </div>
-                        </li>
+                    <li class="logo"> <a href=""> <img src="images/C4230018-1122-4E7F-8387-94CC43B3783C.PNG"
+                                alt="LogoiChill" width="100px"></a> </li>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="generos.html">Géneros</a></li>
+                    <li><a href="series.html">Series<span uk-icon="icon:  triangle-down"></span></a>
+                        <div uk-dropdown="mode: click;">
+                            <ul class="menugenerosSeries uk-nav uk-dropdown-nav" id="menugeneros">
 
-                        <li><a href="favoritos.html">Mi Lista</a></li>
-                        <form class="uk-search uk-search-default" method="GET" action="resultados.html">
-                            <span uk-search-icon></span>
-                            <input class="uk-search-input" type="buscador" placeholder="Buscador..." name="buscador">
-                        </form>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="peliculas.html">Películas<span uk-icon="icon:  triangle-down"></span></a>
+                        <div uk-dropdown="mode: click;">
+                            <ul class="menugenerosPelis uk-nav uk-dropdown-nav" id="menugeneros">
 
-                        <li class="li-menu">
-                            <a class="uk-button uk-button-default" href="#modal-container" uk-toggle id="iniciarSesion">Iniciar Sesión</a>
-                        </li>
-                            <div id="modal-container" class="uk-modal-container" uk-modal>
-                            <div class="uk-modal-dialog uk-modal-body">
-                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                <h2 class="fede">Iniciar Sesión</h2>
-                            <form class="form" action="index.html" method="post" >
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="favoritos.html">Mi Lista</a></li>
+                    <form class="uk-search uk-search-default" method="GET" action="resultados.html">
+                        <span uk-search-icon></span>
+                        <input class="uk-search-input" type="buscador" placeholder="Buscador..." name="buscador">
+                    </form>
+
+                    <li class="li-menu">
+                        <a class="uk-button uk-button-default" href="#modal-container" uk-toggle
+                            id="iniciarSesion">Iniciar Sesión</a>
+                    </li>
+                    <div id="modal-container" class="uk-modal-container" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="fede">Iniciar Sesión</h2>
+                            <form class="form" action="index.html" method="post">
                                 <label for="Nombre"></label>Nombre
-                                <input id= "nombre" type="text" name="nombre" value="" required>
+                                <input id="nombre" type="text" name="nombre" value="" required>
 
                                 <br>
                                 <br>
 
                                 <label for="email"></label>Email
-                                <input id= "email" type="email" name="email" value="" required>
+                                <input id="email" type="email" name="email" value="" required>
                                 <br>
                                 <br>
-                                
+
                                 Género
-                                
+
                                 <select class="" name="gender">
                                     <option value="M">Masculino</option>
                                     <option value="F">Femenino</option>
                                     <option value="O">Otro</option>
                                 </select>
-                                
+
                                 <br>
                                 <br>
-                                
+
                                 <button type="submit" name="button">Ingresar</button>
                             </form>
-          
+
                 </ul>
             </div>
         </nav>
 
-        
+
     </header>
-    
 
-        <div class="uk-comment uk-comment-primary" id="DETALLES">
 
+    <div class="uk-comment uk-comment-primary" id="DETALLES">
+
+    </div>
+
+    <article class="uk-comment" id="REVIEWS">
+
+    </article>
+
+    <section class="genres">
+        <div class="carrouselGeneros">
         </div>
-        
-        <article class="uk-comment" id="REVIEWS">
+    </section>
 
-        </article>  
-
-        
     <footer class="fondo">
-        
+
         <hr class="uk-divider-icon">
 
         <nav class="footer">
@@ -107,23 +114,31 @@
                 <li><a href="contactanos.html">CONTACTANOS</a></li>
                 <li><a href="terminosycondiciones.html">TERMINOS Y CONDICIONES</a></li>
                 <li><a href="ayuda.html">AYUDA</a> </li>
-            </ul>          
+            </ul>
         </nav>
 
         <div class="redes">
-            <a href="https://www.facebook.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
+            <a href="https://www.facebook.com" target="_blank" class="0" rel="nofollow"><i
+                    class="fa fa-facebook-square fa-2x" aria-hidden="true"></i><span class="0"><span
+                        class="element-invisible"> </span></span></a>
 
-            <a href="https://twitter.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
-            
-            <a href="https://www.youtube.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
-            
-            <a href="https://www.instagram.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a> 
+            <a href="https://twitter.com" target="_blank" class="0" rel="nofollow"><i class="fa fa-twitter-square fa-2x"
+                    aria-hidden="true"></i><span class="0"><span class="element-invisible"> </span></span></a>
+
+            <a href="https://www.youtube.com" target="_blank" class="0" rel="nofollow"><i
+                    class="fa fa-youtube-square fa-2x" aria-hidden="true"></i><span class="0"><span
+                        class="element-invisible"> </span></span></a>
+
+            <a href="https://www.instagram.com" target="_blank" class="0" rel="nofollow"><i
+                    class="fa fa-instagram fa-2x" aria-hidden="true"></i><span class="0"><span
+                        class="element-invisible"> </span></span></a>
         </div>
 
 
         <div class="tmdb">
             <li>
-                <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="TMDBLogo">
+                <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg"
+                    alt="TMDBLogo">
             </li>
         </div>
         <h6 class="nombres"> Delfina Cardona, Lola Romano & Luisa Nazar</h6>
@@ -131,4 +146,5 @@
     </footer>
 
 </body>
+
 </html>

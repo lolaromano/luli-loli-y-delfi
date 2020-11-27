@@ -18,7 +18,7 @@ window.addEventListener('load',function(){
         var menugenerosPelis = document.querySelector (".menugenerosPelis");
 
          menugenerosPelis.innerHTML +=
-          `<li><a href="generosDetail.html?group=movies&idgenre=${element.id}&media_type=movie">${element.name}</a></li>`
+         `<li><a href="detalles.html?group=movies&idgenre=${element.id}&media_type=movie">${element.name}</a></li>`
           console.log (element)
       };
 
@@ -45,7 +45,7 @@ fetch (`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en
         var menugenerosSeries = document.querySelector (".menugenerosSeries");
 
          menugenerosSeries.innerHTML +=
-          `<li><a href="generosDetail.html?group=tv&idgenre=${element.id}&media_type=tv">${element.name}</a></li>`
+         `<li><a href="detalles.html?group=tv&idgenre=${element.id}&media_type=tv">${element.name}</a></li>`
           console.log (element)
       };
 
