@@ -7,10 +7,9 @@ window.addEventListener('load',function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var queryString = location.search;
+var queryString = location.search;  
 var queryStringObj = new URLSearchParams(queryString);
 
-var id = queryStringObj.get("id");
 
 
     fetch (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1`)
@@ -130,7 +129,7 @@ var id = queryStringObj.get("id");
                                 <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                     <div class="uk-width-expand">                            
                                         <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">RANKING  ${element.vote_average}</a></li>                                                             
                                             <li><a href="#">${element.original_language}</a></li>                            
                                         </ul>  
                                     </div>                      
@@ -176,7 +175,7 @@ var id = queryStringObj.get("id");
                                 <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
                                     <div class="uk-width-expand">                            
                                         <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                            <li><a href="#">${element.release_date}</a></li>                                                             
+                                            <li><a href="#">RANKING  ${element.vote_average}</a></li>                                                             
                                             <li><a href="#">${element.original_language}</a></li>                            
                                         </ul>  
                                     </div>                      
@@ -196,53 +195,6 @@ var id = queryStringObj.get("id");
         })
 
         
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    fetch (`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`)
-    .then(function (response) {
-        return response.json()
-    })
-    .then(function (data) {
-        console.log (data);
-
-    var ul = document.querySelector ("ul.SeriesMasVistas");
-
-        for (let index = 0; index < data.results.length; index++) {
-            const element = data.results [index];
-            
-            ul.innerHTML += `
-            <li>
-            <div class="uk-child-width-1-2@m" uk-grid>
-                <div class="uk-inline">
-                    <div class="uk-panel"> 
-                    <a href="detalles.html?id=${element.id}&media_type=movie">
-                        <img src="${linkImagen}${element.poster_path}" alt="">
-                    </a> 
-                    <div class="uk-position-center uk-panel"><h1></h1></div>
-                        <div class="rectangulo uk-overlay uk-overlay-primary uk-position-bottom">
-                            <div class="uk-width-expand">                            
-                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">                                
-                                    <li><a href="#">${element.release_date}</a></li>                                                             
-                                    <li><a href="#">${element.original_language}</a></li>                            
-                                </ul>  
-                            </div>                      
-                    </div>
-                </div>
-            </div>
-        </li>
-            `;
-
-            console.log(linkImagen + element.poster_path);
-
-        }
-                
-    })
-    .catch(function (error){
-        console.log('El error fue: '+error);
-    })
-
-    
-    
     
     })
 

@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(20, 20, 20);
 }
 
-.logo img{
-   width: 100px;
+.logo img {
+    width: 100px;
 }
 
 .encabezado ul#ul-encabezado-1 {
@@ -19,7 +19,7 @@ body{
     font-stretch: semi-expanded;
     font-size: 20px;
     font-weight: bolder;
-   /* background-color: rgb(191, 101, 243); */
+    /* background-color: rgb(191, 101, 243); */
     background-color: #18171c;
     font-family: 'Arial Narrow Bold';
     height: 130px;
@@ -28,10 +28,10 @@ body{
 }
 
 .encabezado {
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     left: 0;
-    z-index:1;
+    z-index: 1;
     width: 100%;
 }
 
@@ -45,7 +45,9 @@ body{
     font-size: 14px;
 }
 
-.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
     min-height: 0px;
 }
 
@@ -60,20 +62,23 @@ body{
 #DETALLES {
     padding-top: 120px;
     background-color: black;
+
 }
 
-#REVIEWS{
+#REVIEWS {
     margin: 0px;
     width: 100%;
     padding: 30px;
     background-color: black;
     padding-top: 0px;
+
 }
 
 #tituloReviews {
     color: white !important;
     padding-bottom: 5px;
 }
+
 #parrafoReviews {
     display: flex;
     justify-content: center;
@@ -84,7 +89,7 @@ body{
     align-items: flex-end !important;
 }
 
-a:hover{
+a:hover {
     color: #8f8f8f;
 
 }
@@ -97,9 +102,9 @@ canvas img video {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
- }
+}
 
- .uk-nav {
+.uk-nav {
     padding-right: 0px;
     padding-left: 0px;
     float: left;
@@ -109,6 +114,7 @@ canvas img video {
     padding-top: 0px;
     list-style-type: none;
 }
+
 .uk-nav li {
     display: inline;
     padding-left: 2px;
@@ -117,6 +123,7 @@ canvas img video {
     width: 30%;
     padding-top: 2px;
 }
+
 ul#menugeneros.uk-nav.uk-dropdown-nav {
     width: 700px;
 }
@@ -125,11 +132,11 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     display: flex;
     font-style: bold;
     color: white;
-    /*background-color: rgb(227, 184, 255);*/
+    
     font-family: montserrat;
-   /* color: rgb(41, 39, 39); */
+    /* color: rgb(41, 39, 39); */
     padding-top: 10px;
-    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
@@ -140,10 +147,10 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     display: flex;
     font-style: bold;
     color: white;
-    /*background-color: rgb(227, 184, 255);*/
+    
     font-family: montserrat;
-   /* color: rgb(41, 39, 39); */
-    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    /* color: rgb(41, 39, 39); */
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
@@ -155,11 +162,11 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     display: flex;
     font-style: bold;
     color: white;
-    /*background-color: rgb(227, 184, 255);*/
+  
     font-family: montserrat;
-   /* color: rgb(41, 39, 39); */
+    /* color: rgb(41, 39, 39); */
     padding: 10PX;
-    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
@@ -171,11 +178,11 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
     display: flex;
     font-style: bold;
     color: white;
-    /*background-color: rgb(227, 184, 255);*/
+    
     font-family: montserrat;
-   /* color: rgb(41, 39, 39); */
+    /* color: rgb(41, 39, 39); */
     padding-top: 10px;
-    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.25vw;
     font-size: 1.4vw;
     font-weight: 700;
@@ -205,13 +212,254 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 
 }
 
+.PeliculasMasVistas li {
+    width: auto;
+}
+
+.PeliculasMasVistas img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.PeliculasMasVistas img:hover {
+    margin-top: 10px;
+
+}
+
+.SeriesMasRecientes li {
+    width: auto;
+}
+
+.SeriesMasRecientes img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.SeriesMasRecientes img:hover {
+    margin-top: 10px;
+
+}
+
+.SeriesMasVistas li {
+    width: auto;
+}
+
+.SeriesMasVistas img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.SeriesMasVistas img:hover {
+    margin-top: 10px;
+
+}
+
+.PopularesEniChill li {
+    width: auto;
+}
+
+.PopularesEniChill img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.PopularesEniChill img:hover {
+    margin-top: 10px;
+
+}
+
+.Tendencias li {
+    width: auto;
+}
+
+.Tendencias img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.Tendencias img:hover {
+    margin-top: 10px;
+
+}
+
+.NuevosLanzamientos li {
+    width: auto;
+}
+
+.NuevosLanzamientos img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.NuevosLanzamientos img:hover {
+    margin-top: 10px;
+
+}
+
+.Documentales li {
+    width: auto;
+}
+
+.Documentales img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.Documentales img:hover {
+    margin-top: 10px;
+
+}
+
+.FavoritosDeSiempre li {
+    width: auto;
+}
+
+.FavoritosDeSiempre img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.FavoritosDeSiempre img:hover {
+    margin-top: 10px;
+
+}
+
+.accion li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.accion img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.accion img:hover {
+    margin-top: 10px;
+
+}
+
+.comedia li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.comedia img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.comedia img:hover {
+    margin-top: 10px;
+
+}
+
+.drama li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.drama img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.drama img:hover {
+    margin-top: 10px;
+
+}
+
+.misterio li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.misterio img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.misterio img:hover {
+    margin-top: 10px;
+
+}
+
+.romance li {
+    height: 350PX;
+    width: 250PX;
+}
+
+.romance img {
+    float: left;
+    margin: 0px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+
+.romance img:hover {
+    margin-top: 10px;
+
+}
+
+
 .tituloFavoritos {
     padding-top: 120px;
     display: flex;
     color: white;
-    font-style: bold;    
+    font-style: bold;
     line-height: 1.25vw;
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    ;
     font-size: 38px;
     font-weight: 700;
     white-space: nowrap;
@@ -219,66 +467,34 @@ ul#menugeneros.uk-nav.uk-dropdown-nav {
 }
 
 .favsVacio {
-padding-left: 10px;
+    padding-left: 10px;
 }
 
 .rectangulo a {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
 }
 
-.rectangulo-div-li > div {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-1;
-    padding:10px;
-    margin:0;
-  }
+.rectangulo-div-li>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px;
+    margin: 0;
+}
 
-  .rectangulo
-{
+.rectangulo {
     opacity: 0;
 }
+
 .rectangulo:hover {
     opacity: 1;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-.PeliculasMasVistas li {
-    width: auto;
-}
-
-.SeriesMasRecientes li {
-    width: auto;
-}
-
-.SeriesMasVistas li {
-    width: auto;
-}
-
-.PopularesEniChill li {
-    width: auto;
-}
-
-.Tendencias li {
-    width: auto;
-}
-
-.NuevosLanzamientos li {
-    width: auto;
-}
-
-.Documentales li {
-    width: auto;
-}
-
-.FavoritosDeSiempre li {
-    width: auto;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 
 
@@ -286,9 +502,10 @@ padding-left: 10px;
 .tituloGeneros {
     display: flex;
     color: white;
-    font-style: bold;    
+    font-style: bold;
     line-height: 1.25vw;
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    ;
     font-size: 38px;
     font-weight: 700;
     white-space: nowrap;
@@ -296,27 +513,7 @@ padding-left: 10px;
     padding-top: 120px;
 }
 
-.accion li {
-    width: 350px;
-}
 
-.comedia li {
-    width: 350px;
-}
-
-.drama li {
-    width: 350px;
-}
-
-.misterio li {
-    width: 350px;
-}
-
-.romance li {
-    width: 350px;
-    margin-bottom: 30px;
-
-}
 
 .terminos1 {
     text-align: justify;
@@ -330,7 +527,7 @@ padding-left: 10px;
 
 }
 
-.terminos4{
+.terminos4 {
     text-align: justify;
     font-size: 30px;
     line-height: 8px;
@@ -341,11 +538,11 @@ padding-left: 10px;
 }
 
 .pregunta {
-color: rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.63);
 }
 
 .respuesta {
-color: white;
+    color: white;
 }
 
 .boton {
@@ -359,11 +556,12 @@ color: white;
     height: 40px;
 }
 
-#boton li{
+#boton li {
     padding-left: 18px;
     padding-top: 7px;
-    
+
 }
+
 #boton {
     background-color: black;
     height: 40px;
@@ -374,8 +572,8 @@ color: white;
 
 }
 
-.loader{
-    color: white !important; 
+.loader {
+    color: white !important;
     display: flex;
     justify-content: center;
 }

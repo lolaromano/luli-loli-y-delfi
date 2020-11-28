@@ -14,12 +14,8 @@ window.addEventListener("load", function () {
     var queryString = location.search
     var queryStringObj = new URLSearchParams(queryString)
     var id = queryStringObj.get(`id`)
-    var mediaType = queryStringObj.get(`media_type`)
-    
-    var idGenero = queryStringObj.get(`id`)
-    var genres = document.querySelector(`.genres`)
-    var carrouselGeneros = document.querySelector(`.carrouselGeneros`)
-    var generoElegido = queryStringObj.get(`generoelegido`)
+    var mediaType = queryStringObj.get(`media_type`) 
+ 
 
     console.log('la peli elegida es ' + id);
 
@@ -68,7 +64,8 @@ window.addEventListener("load", function () {
                 if (window.localStorage.getItem("favoritos") === null) {
 
                 } else {
-                    var favsElegidas = JSON.parse(localStorage.getItem("favoritos"))
+                    var favsElegidas = JSON.parse(localStorage.getItem("favoritos")) //obtenemos favoritos
+
                     for (let i = 0; i < favsElegidas.length; i++) {
                         const element = favsElegidas[i];
                         if (element == data.id) {
@@ -86,12 +83,12 @@ window.addEventListener("load", function () {
 
                     window.localStorage.setItem(`${data.id}`, JSON.stringify(data)) //en el locals guardamos la pelicula/serie entera
                     if (window.localStorage.getItem("favoritos") === null) {
-                        var listaFavoritos = [data.id] //lista de un solo elemento
-                        window.localStorage.setItem("favoritos", JSON.stringify(listaFavoritos))
+                        var listaFavoritos = [data.id] //lista de un solo elemento 
+                        window.localStorage.setItem("favoritos", JSON.stringify(listaFavoritos)) 
                     } else {
                         var favsElegidas = JSON.parse(localStorage.getItem("favoritos"))
                         favsElegidas.push(data.id)
-                        window.localStorage.setItem("favoritos", JSON.stringify(favsElegidas)) //guardar la lista en favsElegidas, le agregue data.od y la volvi a guaradar en local storage
+                        window.localStorage.setItem("favoritos", JSON.stringify(favsElegidas)) //guardar la lista en favsElegidas, le agregue data.id y la volvi a guardar en local storage
                     }
                 })
 
@@ -104,7 +101,7 @@ window.addEventListener("load", function () {
                         const element = eliminar[i];
                         if (element == data.id) {
                             eliminar.splice(i, 1) //la posicion del id que estoy sacando es i, el 1 es porque quiero sacar solo 1 cantidad. corta desde aca, solo a partir de este elemento
-                            window.localStorage.setItem("favoritos", JSON.stringify(eliminar)) //volvi a guardar la loista con 1 elemento menos
+                            window.localStorage.setItem("favoritos", JSON.stringify(eliminar)) //volvi a guardar la lista con 1 elemento menos
                             window.localStorage.removeItem (data.id) //
                         }
 

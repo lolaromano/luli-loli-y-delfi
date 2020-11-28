@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
 
 
     for (let i = 0; i < favsElegidas.length; i++) {
-        console.log("aaaaaaaaaaaaaaaa")
+        
         console.log(favsElegidas[i])
 
         const element = JSON.parse(window.localStorage.getItem(`${favsElegidas[i]}`)) // ahora element es toda la pelicula entera (todos los valores)

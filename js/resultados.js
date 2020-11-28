@@ -1,22 +1,11 @@
 window.addEventListener('load', function () {
 
-    /////////////////SPINNER///////////////
-
-    var spinner = document.querySelector(".loader")
-    spinner.style.display = "none";
-    setTimeout(function () {}, 3000);
-    var esconder = document.querySelector(".terminos2")
-    esconder.style.display = "none";
-   
-
     var apiKey = '1dd189fc2111fcf3d905a59b0cd42a3c';
     var linkImagen = "https://image.tmdb.org/t/p/w500";
 
-    this.location.search;
 
     var queryString = location.search;
-    var queryStringObj = new URLSearchParams(queryString);
-    var mediaType = queryStringObj.get(`media_type`);
+    var queryStringObj = new URLSearchParams(queryString); 
 
     var buscadorPelis = document.querySelector("ul.resultadosPeliculas");
     var buscadorSeries = document.querySelector("ul.resultadosSeries");
@@ -27,33 +16,8 @@ window.addEventListener('load', function () {
     console.log(buscadorSeries);
 
 
-    var buscando = queryStringObj.get("buscador");
-
-    ///////////SPINNER//////////
-
-    if (mediaType == "movie") {
-
-        fetch(``)
-            .then(function (response) {
-                return response.json()
-            })
-            .then(function (data) {
-                console.log(data)
-
-                spinner.style.display = "none";
-                esconder.style.display = "none";
-              
-            })
 
 
-            .catch(function (error) {
-                console.log('El error fue: ' + error);
-
-            })
-
-    }
-
-    ///////////SPINNER//////////
 
 
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${buscando}}&page=1&include_adult=false`)
@@ -71,7 +35,7 @@ window.addEventListener('load', function () {
             for (let i = 0; i < data.results.length; i++) {
                 const element = data.results[i];
 
-                buscadorPelis.innerHTML +=
+                buscadorPelis.innerHTML += 
 
                     `<li>
                 <div class="resultados uk-child-width-1-2@m" uk-grid>
@@ -87,7 +51,7 @@ window.addEventListener('load', function () {
                 </div>
             </li>`
 
-                console.log(linkImagen + element.poster_path);
+                console.log(linkImagen + element.poster_path); 
             }
         })
 
@@ -135,3 +99,34 @@ window.addEventListener('load', function () {
 
 
 }); //fin
+
+
+var spinner = document.querySelector(".loader")
+spinner.style.display = "none";
+setTimeout(function () {}, 3000);
+var esconder = document.querySelector(".terminos2")
+esconder.style.display = "none";
+///////////SPINNER////////// 
+
+if (mediaType == "movie") {
+
+    fetch(``)
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            console.log(data)
+
+            spinner.style.display = "none";
+            esconder.style.display = "none";
+          
+        })
+
+
+        .catch(function (error) {
+            console.log('El error fue: ' + error);
+
+        })
+
+}
+
